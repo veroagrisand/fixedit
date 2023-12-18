@@ -1,0 +1,172 @@
+/* h1 */
+.jumbo h1 {
+    color: white;
+    font-size: 3.2em;
+}
+
+.container .jumbo p {
+    color: white;
+}
+/*
+.container .row .card {
+    width: 380px;
+    height: 528;
+}
+*/
+
+.text-center h1 {
+    color: white;
+    font-size: 3.2em;
+}
+
+.text-center p {
+    color: white;
+}
+
+
+.card-bodyy {
+    border-radius:40px ;
+    color: #000000;
+}
+
+.container .row .col img {
+    width: 340px;
+    height: 242px;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+.btncreate {
+    width: 220px;
+    height: 56px;
+    border-radius: 13px;
+    background-color: #703FC7;
+}
+
+.btncreate button {
+    color: white;
+}
+
+.btnmycommunity {
+    width: 220px;
+    height: 56px;
+    border-radius: 13px;
+    background-color: #703FC7;
+}
+
+.btnmycommunity button {
+    color: white;
+}
+
+.navbar {
+    background-color: none;
+}
+
+#dropdownMenuButton1 {
+    width: 209px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: #703FC7;
+    color: white;
+}
+
+.container .row .col .card a {
+    display: flex;
+    height: 52px;
+    padding: 19px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 15px;
+}
+
+#seec {
+    background-color: #703FC7;
+    color: white;
+}
+
+.container .navbar a {
+    color: white;
+}
+
+#button-addon2 {
+    background-color:#703FC7;
+    color: white;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #0D1117 -2.81%, #703FC7 368.87%), linear-gradient(0deg, var(--Hitam, #0E1118) 0%, var(--Hitam, #0E1118) 100%), linear-gradient(0deg, var(--ungu, #773EC7) 0%, var(--ungu, #773EC7) 100%), #6E93D7;
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    }
+
+.card {
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: white;
+}
+
+.card-body {
+    background: linear-gradient(180deg, #0D1117 -2.81%, #703FC7 368.87%), linear-gradient(0deg, var(--Hitam, #0E1118) 0%, var(--Hitam, #0E1118) 100%), linear-gradient(0deg, var(--ungu, #773EC7) 0%, var(--ungu, #773EC7) 100%), #6E93D7;
+    border: 2.5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+}
+
+.card-body input {
+    color: white;
+    border-radius: 8px;
+    border-color: black;
+    background-color: #000000;
+}
+
+.form-input {
+    width: 150px;
+}
+
+.card-body ::placeholder {
+    color:white;
+}
+
+.colom {
+    border-style: solid;
+    border-color: white;
+}
+
+.sign {
+    color: white;
+}
+
+.butlog {
+    border-style: none;
+    background-color: #6a11cb;
+    border-radius: 10px;
+}
+
+.log a{
+    color: white;
+}
+
+.card-title {
+    font-weight: normal;
+}
+
+#btn1 {
+    width: 130px;
+    height: 40px;
+    background-color: #6a11cb;
+    color: white;
+}
+
+#btn2 {
+    width: 130px;
+    height: 40px;
+}

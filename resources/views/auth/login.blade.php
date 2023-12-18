@@ -44,4 +44,5 @@
             </x-primary-button>
         </div>
     </form>
+    @include('layouts.credit')
 </x-guest-layout>
