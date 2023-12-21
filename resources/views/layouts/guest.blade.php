@@ -18,7 +18,8 @@
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
             <div>
                 <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                    {{-- <x-application-logo class="w-20 h-20 fill-current text-gray-500" /> --}}
+                    <img src="img/konekin-bulat.png" alt="" width="41" height="41" class="d-inline-block align-text-top"><h4 class="d-inline-block align-text-top ms-2 mt-1">
                 </a>
             </div>
 

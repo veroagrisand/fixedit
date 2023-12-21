@@ -24,7 +24,7 @@
                       </a>
                       <div class="d-grid gap-2 d-md-flex justify-content-md-end" >
                         <a href="/login"><button href="/login" type="button" class="btn btn-outline-light col-sm-9" id="btn2" >Sign in</button></a>
-                        <a href="/register"><button type="button" class="btn col-sm-9" id="btn1">Sign up</button></a>
+                        <a href="/signup"><button type="button" class="btn col-sm-9" id="btn1">Sign up</button></a>
                     </div>
                     </div>
                   </nav>
@@ -32,14 +32,14 @@
             <br><br>
               <div class="jumbo mt-8">
               <h1>Discover Unlimited Potential <br> Within the Community</h1>
-              <div class="float-end col-md-6">
+              <div class="float-end col-md-4">
                 <img src="img/landingpage-image.png" alt="3D" class="img-fluid" width="311px">
               </div>
               <p><strong>Welcome to Berrvy,</strong> where your vision of a strong community becomes a <br>reality.</p>
               <div class="row mt-4 col-md-4">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control col-md-12" placeholder="Email addres" aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <a href="/register"><button class="btn " type="button" id="button-addon2">Sign up</button></a>
+                  <a href="/login"><button class="btn " type="button" id="button-addon2">Sign in</button></a>
                 </div>
               </div>
         </div>

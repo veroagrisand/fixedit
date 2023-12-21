@@ -1,3 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+
+.iconnav {
+    color: white;
+}
+
+.nav-active {
+    font-weight: 700;
+}
+
+.navbar-nav {
+    color: white;
+}
+
 /* h1 */
 .jumbo h1 {
     color: white;
@@ -38,8 +62,8 @@
 
 .btncreate {
     width: 220px;
-    height: 56px;
-    border-radius: 13px;
+    height: 50px;
+    border-radius: 15px;
     background-color: #703FC7;
 }
 
@@ -47,10 +71,15 @@
     color: white;
 }
 
+.navbar .container .gambarnav img {
+    width: 100px;
+    height: 100px;
+}
+
 .btnmycommunity {
     width: 220px;
-    height: 56px;
-    border-radius: 13px;
+    height: 50px;
+    border-radius: 15px;
     background-color: #703FC7;
 }
 
@@ -62,9 +91,9 @@
     background-color: none;
 }
 
-#dropdownMenuButton1 {
-    width: 209px;
-    height: 43px;
+#akun {
+    width: auto;
+    height: auto;
     border-radius: 10px;
     background-color: #703FC7;
     color: white;
@@ -129,9 +158,11 @@
 }
 
 .form-input {
-    width: 150px;
+    width: auto;
+    height: 35px;
 }
 
+/*  */
 .card-body ::placeholder {
     color:white;
 }
@@ -170,3 +201,28 @@
     width: 130px;
     height: 40px;
 }
+
+/* My Community */
+
+.fkategori {
+    width: 820px;
+    height: 172px;
+    opacity: 20%;
+    border-radius: 15px;
+    border: 5px;
+    border-color: white;
+    background-color: #773EC7;
+}
+
+.fkategori button {
+    border-radius: 20px;
+    opacity: 20% ;
+    background-color: #0E1118;
+
+}
+
+.fkategori p {
+    color: white;
+}
+
+/* End My Community */
