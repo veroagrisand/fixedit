@@ -16,7 +16,7 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen  dark:bg-gray-900 bg">
-            @include('layouts.navigation')
+            @include('layouts.partials.navigation')
             
             <!-- Page Heading -->
             @if (isset($header))

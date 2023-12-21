@@ -15,37 +15,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages/landpage');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/community', function () {
-    return view('community');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
+    return view('layouts/landpage');
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('layouts/dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/community', function () {
-    return view('pages/community');
+    return view('layouts/community');
 })->middleware(['auth', 'verified'])->name('community');
 
 Route::get('/about', function () {
-    return view('pages/about');
+    return view('layouts/about');
 })->middleware(['auth', 'verified'])->name('about');
-
-Route::get('/contact', function () {
-    return view('pages/contact');
-})->middleware(['auth', 'verified'])->name('contact');
-
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -55,5 +38,19 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
+// Route::get('/about', function () {
+//     return view('about');
+// });
 
+// Route::get('/community', function () {
+//     return view('community');
+// });
+
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
+
+// Route::get('/contact', function () {
+//     return view('layouts/contact');
+// })->middleware(['auth', 'verified'])->name('contact');
 

@@ -59,7 +59,17 @@ a {
     padding: 30px;
     border-radius: 40px;
 }
-
+.jf {
+    font-weight: 700;
+    
+}
+#button-addon3 {
+    background-color: #703FC7;
+    color: white;
+    border-radius: 15px;
+    width: 211px;
+   height:56px;
+}
 .btncreate {
     width: 220px;
     height: 50px;
