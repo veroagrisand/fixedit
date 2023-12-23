@@ -12,8 +12,8 @@
         <!-- Birthdate -->
         <div class="mt-4">
             <x-input-label for="birthdate" :value="__('Birthdate')" />
-            <x-text-input id="birthdate" class="block mt-1 w-full" type="date" name="birthdate" :value="old('birthdate')" />
-            <x-input-error :messages="$errors->get('birthdate')" class="mt-2" />
+            <x-text-input id="birthdate" class="block mt-1 w-full" type="date" name="Birthdate" :value="old('Birthdate')" />
+            <x-input-error :messages="$errors->get('Birthdate')" class="mt-2" />
         </div>
 
         <!-- Email Address -->
