@@ -23,22 +23,3 @@ class Community extends Model
         'id_kategori',
     ];
 }
-
-// class Community extends Model
-// {
-//     use HasApiTokens, HasFactory, Notifiable;
-
-//     protected $table = ' komunitas';
-//     protected $fillable = [
-//         'id_komunitas',
-//         'nama_komunitas',
-//         'image_komunitas', 
-//         'description_komunitas',
-//         'id_kategori',
-//     ];
-//     protected $primaryKey = 'id_komunitas'; // Menetapkan primary key
-//     public $incrementing = false; // Untuk menonaktifkan inkremental pada ID
-//     protected $keyType = 'string'; // Tipe data ID
-
-// }
-    

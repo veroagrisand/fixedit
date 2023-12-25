@@ -32,9 +32,9 @@ Route::get('/about', function () {
     return view('layouts/about');
 })->middleware(['auth', 'verified'])->name('about');
 
-Route::get('/createcommunity', function () {
-    return view('layouts/createcommunity');
-})->middleware(['auth', 'verified'])->name('createcommunity');
+// Route::get('/createcommunity', function () {
+//     return view('layouts/createcommunity');
+// })->middleware(['auth', 'verified'])->name('createcommunity');
 
 Route::get('/profilcommunity', function () {
     return view('layouts/profilcommunity');
@@ -57,17 +57,6 @@ Route::get('/editprofil', function () {
 })->middleware(['auth', 'verified'])->name('update-profile-information-form');
 
 
-
-Route::prefix('admin')->group(function () {
-    Route::post('/createcommunity', [CreateCommunityController::class, 'store'])->name('foto_createcommunity.store');
-});
-
-Route::get('/createcommunity', 'CreateCommunityController@create')->name('createcommunity');
-
-Route::post('/createcommunity', [foto_createcommunity::class, 'store'])->name('foto_createcommunity.store');
-
-
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -88,6 +77,17 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/createcommunity', [CreateCommunityController::class, 'create'])->name('createcommunity.create');
     Route::post('/createcommunity', [CreateCommunityController::class, 'store'])->name('createcommunity.store');
 });
+
+
+
+// Route::get('/coba', [CreateCommunityController::class, 'view']);
+// Route::prefix('admin')->group(function () {
+//     Route::post('/createcommunity', [CreateCommunityController::class, 'store'])->name('foto_createcommunity.store');
+// });
+
+// Route::get('/createcommunity', 'CreateCommunityController@create')->name('createcommunity');
+
+// Route::post('/createcommunity', [foto_createcommunity::class, 'store'])->name('foto_createcommunity.store');
 // Route::get('/edit', function () {
 //     return view('profile/partials/update-profile-information-form');
 // })->middleware(['auth', 'verified'])->name('profile.partials.userdshbrd');

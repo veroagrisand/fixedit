@@ -8,7 +8,10 @@
     <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
     <div class="p-2">
       <!-- Heading -->
-      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
+      {{-- <h2 class="font-bold text-lg mb-2">{{$komunitas->nama_komunitas}}</h2> --}}
+      <h2 class="font-bold text-lg mb-2">
+        {{-- {{ $komunitas->nama_komunitas }}   --}}error
+      </h2>
       <!-- Description -->
       <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
     </div>
