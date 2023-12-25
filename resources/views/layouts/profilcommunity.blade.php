@@ -43,7 +43,7 @@
             </div>
     
     
-                  <div class="mt-4 w-full  min-h-screen mb-0 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins pb-6">
+                  <div class="mt-4 w-full min-h-screen mb-0 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins pb-6">
     
                   
     
