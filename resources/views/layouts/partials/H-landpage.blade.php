@@ -11,7 +11,7 @@
       <div class="float-end col-md-4">
         <img src="img/landingpage-image.png" alt="3D" class="img-fluid" width="311px">
       </div>
-      <p><strong>Welcome to Berrvy,</strong> where your vision of a strong community becomes a <br>reality.</p>
+      <p><strong>Welcome to konekin,</strong> where your vision of a strong community becomes a <br>reality.</p>
       <div class="row mt-5 col-md-4 ">
         <a href="/community"><button class="btn" type="button" id="button-addon3">Join Community</button></a>  
       </div>

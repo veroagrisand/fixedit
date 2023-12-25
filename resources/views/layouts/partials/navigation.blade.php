@@ -19,7 +19,7 @@
     
   </head>
   <body>
-    <section class="vh-200 ">
+    <section class="vh-200 font-poppins ">
         <div class="container py-5 h-100">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg bg-none text-white">
@@ -29,7 +29,7 @@
                     <!-- Logo -->
                         <div class="shrink-0 flex items-center">
                             <a href="{{ route('dashboard') }}">
-                                <img src="img/konekin-bulat.png" alt="" class="d-inline-block align-text-top"><h4 class="d-inline-block align-text-top ms-3 mt-2">Berrvy</h4>
+                                <img src="img/konekin-bulat.png" alt="" class="d-inline-block align-text-top"><h4 class="d-inline-block align-text-top ms-3 mt-2">Konekin</h4>
                                 
                             </a>
                         </div>
@@ -58,7 +58,7 @@
                             <x-slot name="trigger">
                                 {{-- <button id="akun" class="navbar-nav inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150"> --}}
                                 <button id="akun" class="navbar-nav inline-flex items-center px-4 py-2 border dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">    
-                                    <div class="btn1">{{ Auth::user()->name }}</div>
+                                    <div class="btn1">Hello, {{ Auth::user()->name }}</div>
                                     <div class="ms-1">
                                         <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -67,7 +67,8 @@
                                 </button>
                             </x-slot>
                             <x-slot name="content" >                                    
-                                <x-dropdown-link :href="route('profile.edit')">
+                                {{-- <x-dropdown-link :href="route('profile.edit')"> --}}
+                                    <x-dropdown-link href="/tampil">
                                     {{ __('Profile') }}
                                 </x-dropdown-link>
                                 <!-- Authentication -->

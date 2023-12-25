@@ -1,70 +1,137 @@
+<div class="mt-0 w-full block min-h-screen mb-6 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins">
+    
+                  
+    
+  <!-- Card -->
+  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <!-- Image -->
+    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
+    <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
+    </div>
+    <!-- CTA -->
+    <div class="m-2 text-sm">
+      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
+    </div>
+  </div>
 
-<div class="container">
-    <div class="row">
-      <div class="col align-self-start">
-        <div class="card bg-light justify-content-center text-white">
-          <img src="img/Card.png" class="card-img-top text-center" alt="community">
-          <div class="container card-bodyy bg-light mb-4">
-            <h4 class="font-weight-bold">Pemrograman WEB ITP</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn" id="seec">See community</a>
-          </div>
-        </div>
-      </div>
-      <div class="col align-self-center">
-        <div class="card bg-light justify-content-center text-white">
-          <img src="img/infosumbar.jpeg" class="card-img-top text-center" alt="community">
-          <div class="container card-bodyy bg-light mb-4">
-            <h4 class="font-weight-bold">Info Sumbar</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn" id="seec">See community</a>
-          </div>
-        </div>
-      </div>
-      <div class="col align-self-end">
-        <div class="card bg-light justify-content-center text-white">
-          <img src="img/Card.png" class="card-img-top text-center" alt="community">
-          <div class="container card-bodyy bg-light mb-4">
-            <h4 class="font-weight-bold">Pemrograman WEB ITP</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn" id="seec">See community</a>
-          </div>
-        </div>
-      </div>
+  <!-- Card -->
+  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <!-- Image -->
+    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
+    <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
+    </div>
+    <!-- CTA -->
+    <div class="m-2 text-sm">
+      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
     </div>
   </div>
+
+  <!-- Card -->
+  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <!-- Image -->
+    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
+    <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
+    </div>
+    <!-- CTA -->
+    <div class="m-2 text-sm">
+      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <!-- Image -->
+    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
+    <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
+    </div>
+    <!-- CTA -->
+    <div class="m-2 text-sm">
+      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <!-- Image -->
+    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
+    <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
+    </div>
+    <!-- CTA -->
+    <div class="m-2 text-sm">
+      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <!-- Image -->
+    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
+    <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
+    </div>
+    <!-- CTA -->
+    <div class="m-2 text-sm">
+      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <!-- Image -->
+    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
+    <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
+    </div>
+    <!-- CTA -->
+    <div class="m-2 text-sm">
+      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+    <!-- Image -->
+    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
+    <div class="p-2">
+      <!-- Heading -->
+      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
+      <!-- Description -->
+      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
+    </div>
+    <!-- CTA -->
+    <div class="m-2 text-sm">
+      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
+    </div>
+  </div>
+
   
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col align-self-start">
-        <div class="card bg-light justify-content-center text-white">
-          <img src="img/Card.png" class="card-img-top text-center" alt="community">
-          <div class="container card-bodyy bg-light mb-4">
-            <h4 class="font-weight-bold">Pemrograman WEB ITP</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn" id="seec">See community</a>
-          </div>
-        </div>
-      </div>
-      <div class="col align-self-center">
-        <div class="card bg-light justify-content-center text-white">
-          <img src="img/Card.png" class="card-img-top text-center" alt="community">
-          <div class="container card-bodyy bg-light mb-4">
-            <h4 class="font-weight-bold">Pemrograman WEB ITP</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn" id="seec">See community</a>
-          </div>
-        </div>
-      </div>
-      <div class="col align-self-end">
-        <div class="card bg-light justify-content-center text-white">
-          <img src="img/Card.png" class="card-img-top text-center" alt="community">
-          <div class="container card-bodyy bg-light mb-4">
-            <h4 class="font-weight-bold">Pemrograman WEB ITP</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn" id="seec">See community</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
+
+</div>

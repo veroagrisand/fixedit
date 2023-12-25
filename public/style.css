@@ -234,5 +234,182 @@ a {
 .fkategori p {
     color: white;
 }
+/* Footer */
+.jf {
+    font-weight: 700;
+}
+/* end footer */
 
+/* Create community */
+
+.createkomunitas .card-bodyyy {
+    width: 817px;
+    height: 172px;
+    border-radius: 15px;
+    background: rgba(112,63,199, 0.20);
+  }
+  
+  .createkomunitas .card {
+      width: 820px;
+      height: 172px;
+      border-radius: 13px;
+      border: 1px;
+      border-color: grey;
+  }
+  
+  .createkomunitas .kt {
+      margin-top: 15px;
+      margin-left: 5px;
+  }
+  
+  .createkomunitas2 .card-bodyyy {
+      background: rgba(112,63,199, 0.20);
+      width: 817px;
+      height: 300px;
+      border-radius: 15px;
+  }
+    
+  .createkomunitas2 .card {
+      width: 820px;
+      height: 300px;
+      border-radius: 13px;
+      border: 1px;
+      border-color: grey;
+  }
+  
+  .createkomunitas2 .kt {
+      margin-top: 25px;
+      margin-left: 5px;
+  }
+  
+  .createkomunitas2 .des {
+      margin-top: -15px;
+      margin-left: 5px;
+  }
+  
+  .createkomunitas2 img {
+      margin-left: 10px;
+      width: 155px;
+      height: 120px;
+  }
+  
+  .createkomunitas2 input {
+      margin-left: 10px;
+      margin-top: 20px;
+  }
+  
+  .createkomunitas3 .card-bodyyy {
+      background: rgba(112,63,199, 0.20);
+      width: 817px;
+      height: 400px;
+      border-radius: 15px;
+  }
+    
+  .createkomunitas3 .card {
+      width: 820px;
+      height: 400px;
+      border-radius: 15px;
+      border: 1px;
+      border-color: grey;
+  }
+  
+  .createkomunitas3 .kt {
+      margin-top: 25px;
+      margin-left: 5px;
+  }
+  
+  .createkomunitas3 input {
+      width: 780px;
+      height: 56px;
+      border-radius: 10px;
+      margin-left: 10px;
+  }
+  
+  .createkomunitas3 textarea {
+      width: 780px;
+      height: 204px;
+      border-radius: 10px;
+      margin-left: 10px;
+  }
+  
+  /* End community */
+
+
+.myprofile {
+    width: 1000px;
+}
+
+/* About */
+
+.about h1 {
+    font-weight: 700;
+}
+
+.about .aboutisi {
+    margin-bottom: 200px;
+}
+
+.about img {
+    width: 220px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.about .card {
+    width: 250px;
+    height: 280px;
+    border-radius: 6px;
+}
+
+.about .card p {
+    margin-top: -10px;
+    color: gray;
+}
+
+.about .utama {
+    margin-bottom: 350px;
+}
+
+.bawah {
+    margin-bottom: 200px;
+}
+
+/* Container untuk foto profil */
+.profile-picture-container-community {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #fff; /* Ganti warna sesuai kebutuhan */
+  }
+  .profile-picture-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #fff; /* Ganti warna sesuai kebutuhan */
+  }
+  
+  /* Foto profil */
+  .profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Styling tambahan, misalnya untuk memberi bayangan */
+  .profile-picture-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling tambahan, misalnya untuk memberi efek hover */
+  .profile-picture-container:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+/* END About */
 /* End My Community */

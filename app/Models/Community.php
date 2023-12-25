@@ -1,0 +1,44 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
+
+class Community extends Model
+{
+    use HasApiTokens, HasFactory, Notifiable;
+
+    protected $primaryKey = 'id_komunitas';
+    protected $table = 'komunitas';
+    public $incrementing = false; // Menonaktifkan auto-increment
+
+    protected $fillable = [
+        'id_komunitas',
+        'nama_komunitas',
+        'image_komunitas',
+        'description_komunitas',
+        'id_kategori',
+    ];
+}
+
+// class Community extends Model
+// {
+//     use HasApiTokens, HasFactory, Notifiable;
+
+//     protected $table = ' komunitas';
+//     protected $fillable = [
+//         'id_komunitas',
+//         'nama_komunitas',
+//         'image_komunitas', 
+//         'description_komunitas',
+//         'id_kategori',
+//     ];
+//     protected $primaryKey = 'id_komunitas'; // Menetapkan primary key
+//     public $incrementing = false; // Untuk menonaktifkan inkremental pada ID
+//     protected $keyType = 'string'; // Tipe data ID
+
+// }
+    
