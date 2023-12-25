@@ -10,7 +10,12 @@
       <!-- Heading -->
       {{-- <h2 class="font-bold text-lg mb-2">{{$komunitas->nama_komunitas}}</h2> --}}
       <h2 class="font-bold text-lg mb-2">
-        {{-- {{ $komunitas->nama_komunitas }}   --}}error
+        {{-- {{ $komunitas->nama_komunitas }}  error --}}
+        {{-- @foreach($user->communities as $community) --}}
+                 {{ Auth::user()->name }}
+                {{-- {{ $user->$community->nama_komunitas }} --}}
+            {{-- @endforeach --}}
+
       </h2>
       <!-- Description -->
       <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>

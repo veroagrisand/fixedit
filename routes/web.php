@@ -3,6 +3,7 @@
 use App\Http\Controllers\foto_createcommunity;
 use App\Http\Controllers\CreateCommunityController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,10 +33,6 @@ Route::get('/about', function () {
     return view('layouts/about');
 })->middleware(['auth', 'verified'])->name('about');
 
-// Route::get('/createcommunity', function () {
-//     return view('layouts/createcommunity');
-// })->middleware(['auth', 'verified'])->name('createcommunity');
-
 Route::get('/profilcommunity', function () {
     return view('layouts/profilcommunity');
 })->middleware(['auth', 'verified'])->name('profilcommunity');
@@ -52,11 +49,6 @@ Route::get('/forum', function () {
     return view('layouts/forumcommunity');
 })->middleware(['auth', 'verified'])->name('forumcommunity');
 
-Route::get('/editprofil', function () {
-    return view('profile/partials/update-profile-information-form');
-})->middleware(['auth', 'verified'])->name('update-profile-information-form');
-
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -65,7 +57,7 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/tampil', function () {
+Route::get('/tampil1', function () {
     return view('profile/userdshbrd');
 })->middleware(['auth', 'verified'])->name('profile.partials.userdshbrd');
 
