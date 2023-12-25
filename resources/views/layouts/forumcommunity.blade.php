@@ -22,8 +22,7 @@
                     <div class="mt-10 flex-row mb-6">
                         
                     </div>
-                    <div class="font-poppins  flex space-x-8 sm:text-xs md:text-sm lg:text-base mt-6 mb-0 items-center mb-6">
-    
+                    <div class="font-poppins  flex space-x-8 sm:text-xs md:text-sm lg:text-base mt-6 mb-6 items-center ">
                         <a href="/event" class=" text-white "> Event </a>
                         <a href="/galeri" class=" text-white  "> Galeri</a>
                         <a href="/forum" class=" text-white font-semibold"> Forum </a>
@@ -43,7 +42,7 @@
             </div>
     
     
-                  <div class="mt-4 w-full block min-h-screen mb-0 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins pb-6">
+                  <div class="mt-4 w-full min-h-screen mb-0 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins pb-6">
     
                   
     

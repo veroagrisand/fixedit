@@ -15,8 +15,7 @@
 </div>
 
 <br><br><br><br><br>
-<div class="mt-0 w-full block min-h-screen mb-6 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins">
-    
+<div class="mt-0 w-full  min-h-screen mb-6 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins">
                   
     
   <!-- Card -->

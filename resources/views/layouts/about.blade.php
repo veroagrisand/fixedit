@@ -1,5 +1,5 @@
 <x-app-layout>
-<div class="about font-poppins container mx-auto mx-10">
+<div class="about font-poppins container mx-10">
 
 <div class="grid grid-cols-10">
 

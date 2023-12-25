@@ -9,7 +9,7 @@
               </div>
               <p>Join the community,<strong> and it's free! </strong></p>
               
-              <div class="row mt-4 col-md-4 mt-5">
+              <div class="row mt-5 col-md-4 ">
                 <a href="/community"><button class="btn" type="button" id="button-addon3">Join Community</button></a>  
               </div>
               {{-- <div class="row mt-4 col-md-4">
