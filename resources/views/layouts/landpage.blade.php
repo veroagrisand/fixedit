@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="style.css">
     
   </head>
-  <body>
-    <section class="vh-200 gradient-custom">
-        <div class="container py-5 h-100">
-            <div class="container">
+  <body class="bg-black">
+    <section class="container mx-auto mt-32">
+        <div class="grid grid-cols-12 ">
+            <div>
                 <nav class="navbar sticky-top bg-none">
                     <div class="container-fluid">
                       <a class="navbar-brand" href="/">
@@ -25,16 +25,24 @@
                       <div class="d-grid gap-2 d-md-flex justify-content-md-end" >
                         <a href="/login"><button type="button" class="btn btn-outline-light col-sm-9" id="btn2" >Sign in</button></a>
                         <a href="/register"><button  type="button" class="btn col-sm-9" id="btn1">Sign up</button></a>
-                    </div>
+                    
                     </div>
                   </nav>
-                  
-            </div>
-            
-            @include('layouts.partials.H-landpage')
-            @include('layouts.partials.content')
-        </div>
+                  </div>
+
+         <div class="mt-4 w-full min-h-screen mb-0 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins">
+         @include('layouts.partials.H-landpage')
+         @include('layouts.partials.content')
         @include('layouts.partials.footer')
+
+         </div>
+                           
+           
+
+            
+            
+        </div>
+     
     </section>
       
 
@@ -45,4 +53,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
-

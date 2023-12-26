@@ -16,7 +16,7 @@
     
             <div>
             
-            <img src="img/ucup.jpeg" alt="Profile Picture" class="h-[200px] w-[200px] rounded-full order-2 mb-12 ">
+            <img src="{{ Auth::user()->	image_profile }}" alt="Profile Picture" class="h-[200px] w-[200px] rounded-full order-2 mb-12 ">
       
             </div>
               

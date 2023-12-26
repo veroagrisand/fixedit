@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id('id_komunitas',5);
             $table->string('nama_komunitas');
             $table->text('image_komunitas');
-            $table->text('description_komunitas');
+            $table->string('description_komunitas',20);
             $table->string('id_kategori',5);            
             
             // $table->primary(['id_komunitas']);

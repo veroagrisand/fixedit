@@ -11,6 +11,7 @@ class CreateCommunityController extends Controller
     public function create()
     {
         return view('layouts.createcommunity');
+        
     }
 
     public function store(Request $request)
@@ -19,11 +20,11 @@ class CreateCommunityController extends Controller
 
             'nama_komunitas' => 'required',
             'image_komunitas' => 'required|image|mimes:jpeg,png,jpg,svg|max:5048',
-            'description_komunitas' => 'required',
+            'description_komunitas' => 'required','max:255',
             'id_kategori' => 'required',
         ]);
         
-        $newFotoName =Auth::user()->name  . '-' . $request->input('nama_komunitas') . '.' . $request->image_komunitas->getClientOriginalExtension();
+        $newFotoName ='images'.'/'.'community'.'/'.Auth::user()->name  . '-' . $request->input('nama_komunitas') . '.' . $request->image_komunitas->getClientOriginalExtension();
 
 
         $request->image_komunitas->move(public_path('images/community'), $newFotoName);

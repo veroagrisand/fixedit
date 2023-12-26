@@ -113,9 +113,9 @@
   
   <div class="bawah">
     <div class="aboutisi text-center about mt-5 mx-auto">
-      <h1 class="h1ajah">Join a community<br>
+      <h1 class="h1ajah font-poppins">Join a community<br>
       of owners</h1>
-      <p class="pajah mx-auto">Connect with like-minded experts, enhance your <br>
+      <p class="pajah mx-auto font-poppins">Connect with like-minded experts, enhance your <br>
           knowledge and skills, and accelerate your career. Become <br>
           part of a community-owned company.</p>
     </div>

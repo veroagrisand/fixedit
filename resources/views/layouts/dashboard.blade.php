@@ -1,35 +1,24 @@
 <x-app-layout>
-        <section class="vh-200 font-poppins">
-          <div class="container py-0 h-100">
-            
-            <div class="mt-0 jumbo ">
-              <h1>Ready to join your <br>Community experience</h1>
-              <div class="float-end col-md-6">
-                <img src="img/landingpage-image.png" alt="3D" class="img-fluid" width="311px">
-              </div>
-              <p>Join the community,<strong> and it's free! </strong></p>
-              
-              <div class="row mt-5 col-md-4 ">
-                <a href="/community"><button class="btn" type="button" id="button-addon3">Join Community</button></a>  
-              </div>
-              {{-- <div class="row mt-4 col-md-4">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control col-md-12" placeholder="Email addres" aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <a href="/signup"><button class="btn " type="button" id="button-addon2">Sign up</button></a>
-                </div>
-              </div> --}}
-            </div>
+  <section class="vh-200 font-poppins">
+    <div class="container py-0 h-100">
+      
+      <div class="mt-12">
+        <h1 class="text-8xl text-center font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">Ready to Join Your <br>Community Experience</h1>
+      
+        <p class="text-white text-center my-4 text-xl">Join the community,<strong> and it's free! </strong></p>
+        
+        <div class="mt-5 col-md-4 mx-auto text-center mb-20">
+          <a href="/community">
+            <button class="btn hover:shadow-purple-900 transition duration-300 ease-in-out" type="button" id="button-addon3">Join Community</button>
+          </a>
+        </div>
+        
+      </div>
 
-            <div class="text-center mt-60 mb-20">
-              <h1>"What communities can you <br>join here?"</h1>
-              <p>Discover different communities here! Find one you like, connect with people who share <br>
-              your interests, and enjoy a vibrant community experience with us!.</p>
-            </div>
-
-            @include('layouts.partials.content')
-          </div>
-      </section>        
+    
+      @include('layouts.partials.content')
       @include('layouts.partials.footer')
-</x-app-layout>
+    </div>
+</section>        
 
-  
+</x-app-layout>

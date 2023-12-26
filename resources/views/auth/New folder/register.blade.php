@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +19,10 @@
 </head>
 <body>
 
-<section class="vh-200 gradient-custom ">
+<section class="vh-100 gradient-custom ">
     <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-7">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-6">
                 <div class="card bg-dark text-center text-white" style="width: 40rem;">
                     <div class="card-body">
                         <br>
@@ -30,23 +31,17 @@
                             @csrf
                     
                             <!-- Name -->
-                            <div class="mb-4 col-md-6 mx-auto ">
+                            <div class="mb-4 col-md-6 mx-auto">
                                 {{-- <x-input-label for="name" :value="__('Name')" /> --}}
-                                <input placeholder="Name" class="form-input col-12 text-white" id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                                <input placeholder="Name" class="form-input col-12" id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
                                 <x-input-error :messages="$errors->get('name')" class="mt-2" />
                             </div>
                     
                             <!-- Email Address -->
-                            <div class="mb-4 col-md-6 mx-auto text-white">
+                            <div class="mb-4 col-md-6 mx-auto">
                                 {{-- <x-input-label for="email" :value="__('Email')" /> --}}
-                                <input placeholder="E-mail" class="form-input col-12 text-white" id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="email" />
+                                <input placeholder="E-mail" class="form-input col-12" id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
                                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
-                            </div>
-                            <!-- Birthdate -->
-                            <div class="mb-4 col-md-6 mx-auto text-white">
-                                {{-- <x-input-label for="email" :value="__('Email')" /> --}}
-                                <input  placeholder="E-mail" class="form-input col-12 text-white" id="birthdate" class="block mt-1 w-full" type="date" name="Birthdate" :value="old('Birthdate')" required autocomplete="Birthdate" />
-                                <x-input-error :messages="$errors->get('Birthdate')" class="mt-2" />
                             </div>
                     
                             <!-- Password -->

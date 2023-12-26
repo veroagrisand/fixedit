@@ -37,26 +37,74 @@
     
     
                 </div>
-    
-    
-            </div>
-    
-    
-                  <div class="mt-4 w-full  min-h-screen mb-0 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins pb-6">
-                 <!-- Card -->
-                              <div class="w-60 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                                <!-- Image -->
-                                <img class="h-40 object-cover w-full rounded-t-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                                <div class="p-2">
-                                  <!-- Heading -->
-                                  <h2 class="font-bold text-lg">Kuliah tamu</h2>
-                                  <p class="text-[10px] text-gray-400">Senin,12 Desmber</p>
-                                  
-                                   <div class="mb-3">
-                                  <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                                </div>
 
-                              </div>
+
+                <div class="container mx-auto ">
+                  <div class="grid grid-cols-12 overflow-y-scroll h-96 mt-6">
+                    
+                    <div class="col-span-6 p-6 gap-3 flex flex-col font-poppins">
+                      <!-- Card 1 -->
+                      <div class="w-full bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+                        <!-- Image -->
+                        <img class="h-full object-cover w-full rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">    
+                      </div>
+                    </div>
+                    
+                    <div class="col-span-6 p-6 gap-6 flex flex-col font-poppins">
+                      <!-- Card 2 -->
+                      <div class="w-full bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+                        <!-- Image -->
+                        <img class="h-full object-cover w-full rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">    
+                      </div>
+                    </div>
+
+                    <div class="col-span-6 p-6 gap-6 flex flex-col font-poppins">
+                      <!-- Card 2 -->
+                      <div class="w-full bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+                        <!-- Image -->
+                        <img class="h-full object-cover w-full rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">    
+                      </div>
+                    </div>
+
+                    <div class="col-span-6 p-6 gap-6 flex flex-col font-poppins">
+                      <!-- Card 2 -->
+                      <div class="w-full bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+                        <!-- Image -->
+                        <img class="h-full object-cover w-full rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">    
+                      </div>
+                    </div>
+
+                    <div class="col-span-6 p-6 gap-6 flex flex-col font-poppins">
+                      <!-- Card 2 -->
+                      <div class="w-full bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+                        <!-- Image -->
+                        <img class="h-full object-cover w-full rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">    
+                      </div>
+                    </div>
+
+                    <div class="col-span-6 p-6 gap-6 flex flex-col font-poppins">
+                      <!-- Card 2 -->
+                      <div class="w-full bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+                        <!-- Image -->
+                        <img class="h-full object-cover w-full rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">    
+                      </div>
+                    </div>
+
+                    <div class="col-span-6 p-6 gap-6 flex flex-col font-poppins">
+                      <!-- Card 2 -->
+                      <div class="w-full bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+                        <!-- Image -->
+                        <img class="h-full object-cover w-full rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">    
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                
+    
+    
+                  
                   </div>
                   @include('layouts.partials.footer')
     </section>

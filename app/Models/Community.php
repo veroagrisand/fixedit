@@ -13,7 +13,7 @@ class Community extends Model
 
     protected $primaryKey = 'id_komunitas';
     protected $table = 'komunitas';
-    public $incrementing = false; // Menonaktifkan auto-increment
+    // public $incrementing = false; // Menonaktifkan auto-increment
 
     protected $fillable = [
         'id_komunitas',

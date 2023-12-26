@@ -2,16 +2,14 @@
     {{-- <section class="vh-200">
       <div class="container py-5 h-100"> --}}
   
-        <form action="/createcommunity" method="post" enctype="multipart/form-data">
+        <form class="font-poppins" action="/createcommunity" method="post" enctype="multipart/form-data">
           @csrf
           <div class="createkomunitas">
             <div class="container py-5">
               <div class="row d-flex justify-content-center  text-white align-items-center">
                   <div class="col-12 col-md-8 col-lg-6 col-xl-9">
-                    <p class="justify-center">Create Your Community Below</p>
-                    {{--  --}}
-                   
-                    {{--  --}}
+                    <p class="justify-center">Create Your Community</p>
+                
                     
                     {{-- <div name="id_komunitas">KOM01</div> --}}
                       <div class="card bg-dark text-white">
@@ -43,6 +41,7 @@
                           <div class="card-bodyyy ps-2 mx-auto">
                                   <p class="kt">Profile Picture</p>
                                   <p class="des text-secondary">Image should be at least 600x600px and in JPEG, JPG, and PNG format.</p>
+                                  
                                   <img src="img/konekin-bulat.png" alt="zizan">
                                   <label for="foto" class="form-label"></label>
                                   <input class="form-control form-control-sm bg-dark text-white mb-4 mx-auto" id="foto" type="file" name="image_komunitas" accept="image/*" required>
@@ -87,7 +86,12 @@
         <br>
         <br>
         <br>
+        
       {{-- </div>
   </section>         --}}
   @include('layouts.partials.footer')
   </x-app-layout>
+
+  <!-- resources/views/layouts/createcommunity.blade.php -->
+
+

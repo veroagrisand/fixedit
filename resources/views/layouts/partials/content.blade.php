@@ -1,145 +1,34 @@
-<div class="mt-0 w-full  min-h-screen mb-6 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins">
+<div class="container mx-auto">
+
+  <div class="grid grid-cols-12">
+
+    <div class="col-span-full overflow-y-auto mt-12 w-full h-[640px] mb-6 flex flex-wrap gap-6 justify-center items-center mx-auto font-poppins">
+      @foreach($komunitas as $community)
+        <!-- Card -->
+        <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+          <!-- Image -->
     
-                  
+          <img class="h-40 w-full object-cover rounded-lg" src="{{$community->image_komunitas }}" alt="">
     
-  <!-- Card -->
-  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-    <!-- Image -->
-    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
-    <div class="p-2">
-      <!-- Heading -->
-      {{-- <h2 class="font-bold text-lg mb-2">{{$komunitas->nama_komunitas}}</h2> --}}
-      <h2 class="font-bold text-lg mb-2">
-        {{-- {{ $komunitas->nama_komunitas }}  error --}}
-        {{-- @foreach($user->communities as $community) --}}
-                 {{ Auth::user()->name }}
-                {{-- {{ $user->$community->nama_komunitas }} --}}
-            {{-- @endforeach --}}
+          <div class="p-2">
+            <!-- Heading -->
+            <h2 class="font-bold text-lg mb-2">{{ $community->nama_komunitas }}</h2>
+            <!-- Description -->
+            <p class="text-sm text-gray-600">{{ $community->description_komunitas }}</p>
+          </div>
+          <!-- CTA -->
+          <div class="m-2 text-sm">
+            <a role='button' href='#' class="text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
+          </div>
+        </div>
+        
+      @endforeach
+    </div>
 
-      </h2>
-      <!-- Description -->
-      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
-    </div>
-    <!-- CTA -->
-    <div class="m-2 text-sm">
-      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
-    </div>
   </div>
-
-  <!-- Card -->
-  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-    <!-- Image -->
-    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
-    <div class="p-2">
-      <!-- Heading -->
-      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
-      <!-- Description -->
-      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
-    </div>
-    <!-- CTA -->
-    <div class="m-2 text-sm">
-      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
-    </div>
-  </div>
-
-  <!-- Card -->
-  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-    <!-- Image -->
-    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
-    <div class="p-2">
-      <!-- Heading -->
-      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
-      <!-- Description -->
-      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
-    </div>
-    <!-- CTA -->
-    <div class="m-2 text-sm">
-      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
-    </div>
-  </div>
-
-  <!-- Card -->
-  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-    <!-- Image -->
-    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
-    <div class="p-2">
-      <!-- Heading -->
-      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
-      <!-- Description -->
-      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
-    </div>
-    <!-- CTA -->
-    <div class="m-2 text-sm">
-      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
-    </div>
-  </div>
-
-  <!-- Card -->
-  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-    <!-- Image -->
-    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
-    <div class="p-2">
-      <!-- Heading -->
-      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
-      <!-- Description -->
-      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
-    </div>
-    <!-- CTA -->
-    <div class="m-2 text-sm">
-      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
-    </div>
-  </div>
-
-  <!-- Card -->
-  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-    <!-- Image -->
-    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
-    <div class="p-2">
-      <!-- Heading -->
-      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
-      <!-- Description -->
-      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
-    </div>
-    <!-- CTA -->
-    <div class="m-2 text-sm">
-      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
-    </div>
-  </div>
-
-  <!-- Card -->
-  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-    <!-- Image -->
-    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
-    <div class="p-2">
-      <!-- Heading -->
-      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
-      <!-- Description -->
-      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
-    </div>
-    <!-- CTA -->
-    <div class="m-2 text-sm">
-      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
-    </div>
-  </div>
-
-  <!-- Card -->
-  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-    <!-- Image -->
-    <img class="h-40 object-cover rounded-lg" src="/img/cards.jpg" alt="">
-    <div class="p-2">
-      <!-- Heading -->
-      <h2 class="font-bold text-lg mb-2">Pemograman WEB ITP</h2>
-      <!-- Description -->
-      <p class="text-sm text-gray-600">ini adalah komunitas paling terkenal di Institut Teknologi Pdang</p>
-    </div>
-    <!-- CTA -->
-    <div class="m-2 text-sm">
-      <a role='button' href='#' class=" text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
-    </div>
-  </div>
-
-  
-
-
 
 </div>
+
+
+
+
