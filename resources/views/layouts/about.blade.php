@@ -1,11 +1,11 @@
 <x-app-layout>
 <div class="about font-poppins container mx-10">
 
-<div class="grid grid-cols-10">
 
 
 
-</div>
+
+
 
     <div class="aboutisi text-white text-center about mt-2 mx-auto">
       <h1 class="h1ajah">Connect with many <br> friends in your community</h1>
@@ -120,8 +120,8 @@
           part of a community-owned company.</p>
     </div>
   </div>
-  @include('layouts.partials.footer')
+
   
-</div>
+
 </x-app-layout>
 

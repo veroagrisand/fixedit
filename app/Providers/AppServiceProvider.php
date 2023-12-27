@@ -6,6 +6,8 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use App\Models\Community;
+use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Auth;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,6 +28,13 @@ class AppServiceProvider extends ServiceProvider
     // }
     public function boot()
     {
+        Blade::if('user', function () {
+            return Auth::check();
+        });
+    
+        Blade::directive('user', function () {
+            return '<?php $user = Auth::user(); ?>';
+        });
         // Menggunakan View Composer untuk menyediakan data komunitas ke semua view
         Schema::defaultstringLength(191);
 

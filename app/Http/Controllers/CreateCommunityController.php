@@ -14,6 +14,13 @@ class CreateCommunityController extends Controller
         
     }
 
+    public function show($id)
+    {
+        $komunitas = Community::findOrFail($id); // Gantilah dengan model komunitas yang sesuai
+        return view('layouts.mycommunity', ['komunitas' => $komunitas]);
+    }
+
+
     public function store(Request $request)
     {
         $request->validate([

@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Storage;
 
 class ProfileController extends Controller
 {
@@ -26,15 +27,36 @@ class ProfileController extends Controller
      */
     public function update(ProfileUpdateRequest $request): RedirectResponse
     {
-        $request->user()->fill($request->validated());
+        $user = $request->user();
+        $data = $request->validated();
 
-        if ($request->user()->isDirty('email')) {
-            $request->user()->email_verified_at = null;
+        // Update existing profile fields
+        $user->fill($data);
+
+        // Handle avatar upload
+        if ($request->hasFile('avatar')) {
+            // Generate unique filename based on user name and current timestamp
+            $filename = $user->name . '_' . time() . '.' . $request->file('avatar')->getClientOriginalExtension();
+
+            // Store the new avatar in public/images/avatars
+            $avatarPath = $request->file('avatar')->storeAs('images/avatars', $filename, 'public');
+
+            // Delete the old avatar (if exists)
+            if ($user->avatar) {
+                // Check if the avatar exists before attempting to delete
+                if (Storage::disk('public')->exists($user->avatar)) {
+                    Storage::disk('public')->delete($user->avatar);
+                }
+            }
+
+            // Update user's avatar field with the new file name
+            $user->avatar = $avatarPath;
         }
 
-        $request->user()->save();
+        // Save changes to the user model
+        $user->save();
 
-        return Redirect::route('profile.edit')->with('status', 'profile-updated');
+        return redirect()->route('profile.edit')->with('status', 'profile-updated');
     }
 
     /**

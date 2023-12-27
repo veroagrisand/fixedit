@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
 Route::get('/', function () {
     return view('layouts/landpage');
 });
@@ -34,8 +37,8 @@ Route::get('/about', function () {
 })->middleware(['auth', 'verified'])->name('about');
 
 Route::get('/profilcommunity', function () {
-    return view('layouts/profilcommunity');
-})->middleware(['auth', 'verified'])->name('profilcommunity');
+    return view('layouts/mycommunity');
+})->middleware(['auth', 'verified'])->name('mycommunity');
 
 Route::get('/galeri', function () {
     return view('layouts/galericommunity');

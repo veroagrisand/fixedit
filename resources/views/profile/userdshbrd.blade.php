@@ -2,87 +2,70 @@
 <x-app-layout>
   <!-- Start of font-poppins section -->
   <section class="font-poppins">
-
-    <!-- Start of container div -->
-    <div class="container mx-auto mt-16 sm:p-6 md:p-4 p-6">
-      
-      <!-- Start of grid layout -->
-      <div class="grid grid-cols-12">
-
-
-      
-        <!-- Start of left column (col-span-4) -->
-        <div class="col-span-4 flex flex-col mx-auto">
-
-        <div class="mb-12">
-        
-        <img src="{{ Auth::user()->	image_profile }}" alt="Profile Picture" class="h-[200px] w-[200px] rounded-full order-2 mb-3 ">
-        <div class="text-white flex justify-center no-underline ">
-          
-        </div>
-        {{-- <button class="bg-red-900">sdsdada</button> --}}
-        </div>
-
-            <div class="flex flex-col mx-auto gap-8 font-sm">
-            <a href="/tampil1">
-              <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white forced-colors:appearance-auto" type="button">
-                Dashboard
-              </button>
-            </a>
-
-            <a href="/tampil2">
-              <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
-                Profile
-              </button>
-            </a>
-
-
-            <a href="/profile">
-              <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
-                Edit profil
-              </button>
-            </a>
-
-            </div>
-            </div>
-
-        <!-- Start of right column (col-span-8) -->
-        <div class="flex col-span-8 flex-col gap-2">
-          <h2 class="mx-4 mb-0 flex justify-start my-auto" style="color: white;">Hello, {{ Auth::user()->name }}</h2>
-
-          <!-- Start of content section -->
-          <div>
-            <div class="col-8 mt-48 mx-4 my-[150px]">
-              <!-- Example content sections, replace with actual content -->
-              <div class="gap-6 flex flex-row">
-                
-                <div class="col-6 md-6">
-                  <div class="card p-6 mt-4">
-                    <div class="">
-                      <h1 class="text-base">Active Community</h1>
-                      <h1 class="card-text font-bold">4</h1>
-                    </div>
+      <!-- Start of container div -->
+      <div class="container mx-auto mt-16 sm:p-6 md:p-4 p-6">
+          <!-- Start of grid layout -->
+          <div class="grid grid-cols-12">
+              <!-- Start of left column (col-span-4) -->
+              <div class="col-span-4 flex flex-col mx-auto">
+                  <div class="mb-12">
+                      <div>
+                          <img src="{{ asset('' . Auth::user()->avatar) }}" style="width: 100px; height: 100px; border-radius: 50%;" alt="{{ Auth::user()->name }}">
+                      </div>
+                      
                   </div>
-                </div>
 
-
-                <div class="col-6 md-6">
-                  <div class="card p-6 mt-4">
-                    <div class="">
-                      <h1 class="text-base">My Community</h1>
-                      <h1 class="card-text font-bold">1</h1>
-                    </div>
+                  <div class="flex flex-col mx-auto gap-8 font-sm">
+                      <a href="/tampil1">
+                          <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white forced-colors:appearance-auto" type="button">
+                              Dashboard
+                          </button>
+                      </a>
+                      <a href="/tampil2">
+                          <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
+                              Profile
+                          </button>
+                      </a>
+                      <a href="/profile">
+                          <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
+                              Edit profil
+                          </button>
+                      </a>
                   </div>
-                </div>
-
-
               </div>
-            </div>
-          </div>>
-        </div>
+              <!-- Start of right column (col-span-8) -->
+              <div class="flex col-span-8 flex-col gap-2">
+                  <h2 class="mx-4 mb-0 flex justify-start my-auto" style="color: white;">Hello, {{ Auth::user()->name }}</h2>
+                  <!-- Start of content section -->
+                  <div>
+                      <div class="col-8 mt-48 mx-4 my-[150px]">
+                          <!-- Example content sections, replace with actual content -->
+                          <div class="gap-6 flex flex-row">
+                              <div class="col-6 md-6">
+                                  <div class="card p-6 mt-4">
+                                      <div class="">
+                                          <h1 class="text-base">Active Community</h1>
+                                          <h1 class="card-text font-bold">4</h1>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-6 md-6">
+                                  <div class="card p-6 mt-4">
+                                      <div class="">
+                                          <h1 class="text-base">My Community</h1>
+                                          <h1 class="card-text font-bold">1</h1>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- End of content section -->
+              </div>
+          </div>
+          @include('/../layouts/partials.footer')
       </div>
-      @include('/../layouts/partials.footer')
-    </div>
+      <!-- End of container div -->
   </section>
 </x-app-layout>
 <!-- End of x-app-layout -->

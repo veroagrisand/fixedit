@@ -18,6 +18,8 @@
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gradient-to-b from-purple-950 to-slate-950 ">
             @include('layouts.partials.navigation')
+
+
             
             <!-- Page Heading -->
             @if (isset($header))
@@ -32,6 +34,9 @@
             <main>
                 {{ $slot }}
             </main>
+
+            
+            @include('layouts.partials.footer')
         </div>
     </body>
 </html>

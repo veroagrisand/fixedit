@@ -11,11 +11,14 @@
         @csrf
     </form>
 
-    <form method="post" action="{{ route('profile.update') }}" class="mt-6 space-y-6">
+    <form action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data">
         @csrf
-        @method('patch')
-        
-        <input class="form-control form-control-sm bg-dark text-white mb-4 w-50" id="foto" type="file" name="picture" accept="image/*" >
+        @method('PATCH')
+        <div class="mb-4">
+            <x-input-label for="avatar" :value="__('Avatar')" />
+            <input class="text-white" type="file" class="mt-1 block w-50" id="avatar" name="avatar" accept="image/*">
+            <x-input-error class="mt-2" :messages="$errors->get('avatar')" />
+        </div>
         <div>
             <x-input-label for="name" :value="__('Name')" />
             <x-text-input id="name" name="name" type="text" class="mt-1 block w-50" :value="old('name', $user->name)" required autofocus autocomplete="name" />

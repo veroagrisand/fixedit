@@ -2,6 +2,7 @@
   <!-- Start of x-app-layout -->
 <x-app-layout>
   <!-- Start of font-poppins section -->
+  <form action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data">
   <section class="font-poppins">
 
     <!-- Start of container div -->
@@ -15,10 +16,11 @@
         <!-- Start of left column (col-span-4) -->
         <div class="col-span-4 flex flex-col mx-auto">
 
-        <div>
-        
-        <img src="{{ Auth::user()->	image_profile }}" alt="Profile Picture" class="h-[200px] w-[200px] rounded-full order-2 mb-12 ">
-  
+          <div class="mb-12">
+            <div>
+                <img src="{{ asset('' . Auth::user()->avatar) }}" style="width: 100px; height: 100px; border-radius: 50%;" alt="{{ Auth::user()->name }}">
+            </div>
+            
         </div>
           
             <div class="flex flex-col mx-auto gap-8 font-sm">
