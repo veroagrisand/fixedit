@@ -11,12 +11,12 @@
     <!-- Link CSS ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <!-- Link CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ asset('style.css')}}">
     <!-- Link Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    
+
   </head>
   <body>
     <section class="vh-200 font-poppins ">
@@ -29,8 +29,8 @@
                     <!-- Logo -->
                         <div class="shrink-0 flex items-center">
                             <a href="{{ route('dashboard') }}">
-                                <img src="img/konekin-bulat.png" alt="" class="d-inline-block align-text-top"><h4 class="d-inline-block align-text-top ms-3 mt-2 mr-44">Konekin</h4>
-                                
+                                <img src="{{ asset('img/konekin-bulat.png') }}" alt="" class="d-inline-block align-text-top"><h4 class="d-inline-block align-text-top ms-3 mt-2 mr-44">Konekin</h4>
+
                             </a>
                         </div>
                         <!-- Navigation Links -->
@@ -38,7 +38,7 @@
                             <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                                 {{ __('Home') }}
                             </x-nav-link>
-                            
+
                             <x-nav-link :href="route('community')" :active="request()->routeIs('community')">
                                 {{ __('Community') }}
                             </x-nav-link>
@@ -57,8 +57,8 @@
                         <x-dropdown  class="w-full">
                             <x-slot name="trigger">
                                 {{-- <button id="akun" class="navbar-nav inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150"> --}}
-                                
-                                <button id="akun" class="navbar-nav inline-flex items-center  px-4 py-2 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">    
+
+                                <button id="akun" class="navbar-nav inline-flex items-center  px-4 py-2 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
                                     <div class="text-base">Hello, {{ Auth::user()->name }}</div>
                                     <div class="ms-1">
                                         <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -67,7 +67,7 @@
                                     </div>
                                 </button>
                             </x-slot>
-                            <x-slot name="content" >                                    
+                            <x-slot name="content" >
                                 {{-- <x-dropdown-link :href="route('profile.edit')"> --}}
                                     <x-dropdown-link href="/tampil1">
                                     {{ __('Profile') }}
@@ -87,7 +87,7 @@
                 </div>
             </nav>
         </div>
-    </section>       
+    </section>
 
     <!-- -->
     <script src="script.js"></script>

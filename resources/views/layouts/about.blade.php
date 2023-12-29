@@ -1,16 +1,9 @@
 <x-app-layout>
 <div class="about font-poppins container mx-10">
-
-
-
-
-
-
-
     <div class="aboutisi text-white text-center about mt-2 mx-auto">
       <h1 class="h1ajah">Connect with many <br> friends in your community</h1>
-      <p class="pajah">The more people, the more branches of knowledge. That's why we created Konekin<br> 
-          - a community-owned company connecting technology experts, where ownership<br> 
+      <p class="pajah">The more people, the more branches of knowledge. That's why we created Konekin<br>
+          - a community-owned company connecting technology experts, where ownership<br>
           will be distributed among all members.</p>
     </div>
     <div class="aboutisi text-center about mt-2 mx-auto">
@@ -38,7 +31,7 @@
             interests and talents.</p>
     </div>
   <br><br><br>
-  
+
   <div class="aboutisi text-white about mt-5 mx-auto">
       <h1 class="h1ajah ">What Does<br>
   Konekin Do?</h1>
@@ -47,14 +40,14 @@
           looking to scale their teams.</p>
   </div>
   <br><br><br>
-  
+
   <div class="text-center about mt-5 mx-auto">
       <h1 class="h1ajah">Our Team</h1>
       <p class="pajah mx-auto">Meet the Konekin Creator</p>
     </div>
   <br><br><br>
-  
-  
+
+
     <div class="utama">
       <div class="row mx-auto justify-content-center">
         <div class="kotak col-3 me-5 mb-5">
@@ -71,7 +64,7 @@
             <p class="ms-3">UI UX Desainer</p>
           </div>
         </div>
-      
+
         <div class="kotak col-3 ms-5">
           <div class="card ">
             <img src="img/Erlan.jpeg" class="card-img-top mx-auto" alt="Erlan">
@@ -80,7 +73,7 @@
           </div>
         </div>
       </div>
-    
+
       <div class="row mx-auto justify-content-center mt-5" >
         <div class="kotak col-3 me-5">
           <div class="card ">
@@ -96,21 +89,21 @@
             <p class="ms-3">Analisis</p>
           </div>
         </div>
-      
+
         <div class="kotak col-3 ms-5">
           <div class="card ">
             <img src="img/Ucup.jpeg" class="card-img-top mx-auto" alt="Ucup">
             <h5 class="mt-2 ms-3">Azwar yusuf</h5>
             <p class="ms-3">Back End Developer</p>
-            
+
           </div>
         </div>
       </div>
     </div>
-  
+
     </div>
-  
-  
+
+
   <div class="bawah">
     <div class="aboutisi text-center about mt-5 mx-auto">
       <h1 class="h1ajah font-poppins">Join a community<br>
@@ -121,7 +114,7 @@
     </div>
   </div>
 
-  
+
 
 </x-app-layout>
 

@@ -13,7 +13,7 @@
                     <div>
                         <img src="{{ asset('' . Auth::user()->avatar) }}" style="width: 100px; height: 100px; border-radius: 50%;" alt="{{ Auth::user()->name }}">
                     </div>
-                    
+
                 </div>
                   <div class="flex flex-col mx-auto gap-8 font-sm">
                       <a href="/tampil1">
@@ -61,8 +61,7 @@
                       </div>
                   @endif
               </div>
-          </div>
-          @include('layouts.partials.footer')
+          </div>    
       </div>
   </section>
 </x-app-layout>

@@ -10,8 +10,8 @@
     <!-- Link CSS ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <!-- Link CSS -->
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="{{ asset('style.css')}}">
+
   </head>
   <body class="bg-black">
     <section class="container mx-auto mt-32">
@@ -25,7 +25,7 @@
                       <div class="d-grid gap-2 d-md-flex justify-content-md-end" >
                         <a href="/login"><button type="button" class="btn btn-outline-light col-sm-9" id="btn2" >Sign in</button></a>
                         <a href="/register"><button  type="button" class="btn col-sm-9" id="btn1">Sign up</button></a>
-                    
+
                     </div>
                   </nav>
                   </div>
@@ -36,15 +36,15 @@
         @include('layouts.partials.footer')
 
          </div>
-                           
-           
 
-            
-            
+
+
+
+
         </div>
-     
+
     </section>
-      
+
 
 <!-- -->
 <script src="script.js"></script>

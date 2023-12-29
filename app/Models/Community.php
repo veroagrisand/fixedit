@@ -16,7 +16,7 @@ class Community extends Model
     // public $incrementing = false; // Menonaktifkan auto-increment
 
     protected $fillable = [
-        'id_komunitas',
+        // 'id_komunitas',
         'nama_komunitas',
         'image_komunitas',
         'description_komunitas',

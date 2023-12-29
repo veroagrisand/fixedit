@@ -7,22 +7,22 @@
 
     <!-- Start of container div -->
     <div class="container mx-auto mt-16 sm:p-6 md:p-4 p-6">
-      
+
       <!-- Start of grid layout -->
       <div class="grid grid-cols-12">
 
 
-      
+
         <!-- Start of left column (col-span-4) -->
         <div class="col-span-4 flex flex-col mx-auto">
 
           <div class="mb-12">
             <div>
-                <img src="{{ asset('' . Auth::user()->avatar) }}" style="width: 100px; height: 100px; border-radius: 50%;" alt="{{ Auth::user()->name }}">
+                <img src="{{ asset(Auth::user()->avatar) }}" style="width: 100px; height: 100px; border-radius: 50%;" alt="{{ Auth::user()->name }}">
             </div>
-            
+
         </div>
-          
+
             <div class="flex flex-col mx-auto gap-8 font-sm">
             <a href="/tampil1">
               <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white forced-colors:appearance-auto" type="button">
@@ -66,11 +66,10 @@
                 </div>
               </div>
             </div>
-          </div>>
+          </div>
         </div>
       </div>
-      @include('/../layouts/partials.footer')
-    </div>
+    {{-- </div> --}}
   </section>
 </x-app-layout>
 <!-- End of x-app-layout -->

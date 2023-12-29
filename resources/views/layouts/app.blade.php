@@ -20,7 +20,6 @@
             @include('layouts.partials.navigation')
 
 
-            
             <!-- Page Heading -->
             @if (isset($header))
                 {{-- <header class=" dark:bg-gray-800 shadow">
@@ -35,7 +34,7 @@
                 {{ $slot }}
             </main>
 
-            
+
             @include('layouts.partials.footer')
         </div>
     </body>

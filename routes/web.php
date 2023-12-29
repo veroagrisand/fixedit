@@ -1,9 +1,8 @@
 <?php
 
-use App\Http\Controllers\foto_createcommunity;
+
 use App\Http\Controllers\CreateCommunityController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,10 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
-
 Route::get('/', function () {
-    return view('layouts/landpage');
+    return view('landpage');
 });
 
 Route::get('/dashboard', function () {
@@ -36,33 +33,11 @@ Route::get('/about', function () {
     return view('layouts/about');
 })->middleware(['auth', 'verified'])->name('about');
 
-Route::get('/profilcommunity', function () {
-    return view('layouts/mycommunity');
-})->middleware(['auth', 'verified'])->name('mycommunity');
-
-Route::get('/galeri', function () {
-    return view('layouts/galericommunity');
-})->middleware(['auth', 'verified'])->name('galericommunity');
-
-Route::get('/event', function () {
-    return view('layouts/profilcommunity');
-})->middleware(['auth', 'verified'])->name('profilcommunity');
-
-Route::get('/forum', function () {
-    return view('layouts/forumcommunity');
-})->middleware(['auth', 'verified'])->name('forumcommunity');
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-
-// Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
-
-
-require __DIR__.'/auth.php';
 
 Route::get('/tampil1', function () {
     return view('profile/userdshbrd');
@@ -75,34 +50,12 @@ Route::get('/tampil2', function () {
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/createcommunity', [CreateCommunityController::class, 'create'])->name('createcommunity.create');
     Route::post('/createcommunity', [CreateCommunityController::class, 'store'])->name('createcommunity.store');
+
+    Route::get('/mycommunity', [CreateCommunityController::class, 'mycommunity'])->name('mycommunity');
+    Route::get('/mycommunityEvent/{id}', [CreateCommunityController::class, 'event'])->name('mycommunity.Event');
+    Route::get('/mycommunityGalery/{id}', [CreateCommunityController::class, 'galery'])->name('mycommunity.Galery');
+    Route::get('/mycommunityForum/{id}', [CreateCommunityController::class, 'forum'])->name('mycommunity.Forum');
+    Route::get('/mycommunityEdit/{id}', [CreateCommunityController::class, 'edit'])->name('mycommunity.Edit');
 });
 
-
-
-// Route::get('/coba', [CreateCommunityController::class, 'view']);
-// Route::prefix('admin')->group(function () {
-//     Route::post('/createcommunity', [CreateCommunityController::class, 'store'])->name('foto_createcommunity.store');
-// });
-
-// Route::get('/createcommunity', 'CreateCommunityController@create')->name('createcommunity');
-
-// Route::post('/createcommunity', [foto_createcommunity::class, 'store'])->name('foto_createcommunity.store');
-// Route::get('/edit', function () {
-//     return view('profile/partials/update-profile-information-form');
-// })->middleware(['auth', 'verified'])->name('profile.partials.userdshbrd');
-// Route::get('/about', function () {
-//     return view('about');
-// });
-
-// Route::get('/community', function () {
-//     return view('community');
-// });
-
-// Route::get('/contact', function () {
-//     return view('contact');
-// });
-
-// Route::get('/contact', function () {
-//     return view('layouts/contact');
-// })->middleware(['auth', 'verified'])->name('contact');
-
+require __DIR__.'/auth.php';

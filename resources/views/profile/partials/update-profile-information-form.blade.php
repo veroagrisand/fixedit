@@ -54,7 +54,7 @@
             <x-input-error class="mt-2" :messages="$errors->get('Birthdate')" />
         </div>
         <div class="flex items-center gap-4">
-            <button class="w-50 bg-purple-900 p-3 text-white rounded-md mb-10">{{ __('Save') }}</button>
+            <button class="w-50 bg-purple-900 p-3 mt-4 text-white rounded-md mb-10">{{ __('Save') }}</button>
 
             @if (session('status') === 'profile-updated')
                 <p

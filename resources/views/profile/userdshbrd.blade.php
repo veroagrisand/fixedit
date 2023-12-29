@@ -12,7 +12,7 @@
                       <div>
                           <img src="{{ asset('' . Auth::user()->avatar) }}" style="width: 100px; height: 100px; border-radius: 50%;" alt="{{ Auth::user()->name }}">
                       </div>
-                      
+
                   </div>
 
                   <div class="flex flex-col mx-auto gap-8 font-sm">
@@ -63,7 +63,6 @@
                   <!-- End of content section -->
               </div>
           </div>
-          @include('/../layouts/partials.footer')
       </div>
       <!-- End of container div -->
   </section>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Community;
+use App\Models\Kategori;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -10,16 +11,9 @@ class CreateCommunityController extends Controller
 {
     public function create()
     {
-        return view('layouts.createcommunity');
-        
+        $kategori =Kategori::all();
+        return view('layouts.createcommunity',compact('kategori'));
     }
-
-    public function show($id)
-    {
-        $komunitas = Community::findOrFail($id); // Gantilah dengan model komunitas yang sesuai
-        return view('layouts.mycommunity', ['komunitas' => $komunitas]);
-    }
-
 
     public function store(Request $request)
     {
@@ -30,7 +24,7 @@ class CreateCommunityController extends Controller
             'description_komunitas' => 'required','max:255',
             'id_kategori' => 'required',
         ]);
-        
+
         $newFotoName ='images'.'/'.'community'.'/'.Auth::user()->name  . '-' . $request->input('nama_komunitas') . '.' . $request->image_komunitas->getClientOriginalExtension();
 
 
@@ -49,5 +43,33 @@ class CreateCommunityController extends Controller
 
         return redirect('/community');
 
-    }
+        }
+        public function mycommunity(){
+            // $komunitas=Community::all();
+             // Mendapatkan pengguna yang sedang login
+            $user = Auth::user();
+
+            // Mendapatkan komunitas yang dimiliki oleh pengguna
+            $komunitas = $user->komunitas;
+
+
+            return view('layouts/mycommunity',compact('komunitas'));
+        }
+        public function event(Request $request, $id)
+        {
+            $komunitass = Community::where('id_komunitas', $id)->first(); // pastikan hanya mendapatkan satu objek
+            return view('layouts.komunitas.event', compact('komunitass'));
+        }
+
+        public function galery(Request $request, $id)
+        {
+            $komunitass = Community::where('id_komunitas', $id)->first(); // pastikan hanya mendapatkan satu objek
+            return view('layouts.komunitas.galery', compact('komunitass'));
+        }
+
+        public function forum(Request $request, $id)
+        {
+            $komunitass = Community::where('id_komunitas', $id)->first(); // pastikan hanya mendapatkan satu objek
+            return view('layouts.komunitas.galery', compact('komunitass'));
+        }
 }
