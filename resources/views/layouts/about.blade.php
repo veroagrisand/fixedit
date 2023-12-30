@@ -48,7 +48,7 @@
   <br><br><br>
 
 
-    <div class="utama">
+    <div class="mb-[350px]">
       <div class="row mx-auto justify-content-center">
         <div class="kotak col-3 me-5 mb-5">
           <div class="card ">
@@ -99,7 +99,7 @@
           </div>
         </div>
       </div>
-    </div>
+    {{-- </div> --}}
 
     </div>
 

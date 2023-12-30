@@ -6,6 +6,7 @@
       <!--Grid column-->
       <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
         <div class="shrink-0 flex  items-center">
+
             <a href="{{ route('dashboard') }}" class="text-inherit">
                 <img src="{{ asset('img/konekin-bulat.png') }}" alt="" class="d-inline-block align-text-top"><h4 class="d-inline-block align-text-top ms-3 mt-2 mr-44">Konekin</h4>
 

@@ -7,10 +7,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, HasRoles;
 
     /**
      * The attributes that are mass assignable.
@@ -21,6 +22,8 @@ class User extends Authenticatable
         'name',
         'email',
         'image_profile',
+        'role',
+        'KEY',
         'Birthdate',
         'password',
         'avatar'
@@ -45,9 +48,53 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    public function isMember()
+    {
+        return $this->role === 'member';
+    }
+
+    public function isAdminGrup()
+    {
+        return $this->role === 'admin_group';
+    }
+
+    public function isSuperuser()
+    {
+        return $this->role === 'superuser';
+    }
+
+
 
     public function avatar()
     {
         return $this->belongsTo(Avatar::class);
     }
+
+    public function communities()
+    {
+        return $this->hasMany(Community::class, 'owner_email', 'email');
+    }
+
+    public function adminCommunities()
+    {
+        return $this->hasMany(AdminCommunity::class, 'email', 'email');
+    }
+
+    // public function isMember()
+    // {
+    //     return $this->role === 'member';
+    // }
+
+    // public function isAdminGrup()
+    // {
+    //     return $this->role === 'admin_grup';
+    // }
+
+    // public function isSuperuser()
+    // {
+    //     return $this->role === 'superuser';
+    // }
+    
+
+
 }

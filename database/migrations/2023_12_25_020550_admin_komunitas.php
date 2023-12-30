@@ -10,15 +10,15 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up(): void
-    {   
+    {
         Schema::create('admin_komunitas', function (Blueprint $table) {
             $table->string('email');
             $table->string('id_komunitas',5);
-            $table->date('created_date');
-            $table->date('updated_date');
-            
+            // $table->date('created_date');
+            // $table->date('updated_date');
+            $table->timestamps();
             $table->primary(['email', 'id_komunitas']);
-            
+
             // $table->timestamps();
         });
     }

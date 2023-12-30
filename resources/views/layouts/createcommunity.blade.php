@@ -2,7 +2,7 @@
     {{-- <section class="vh-200">
       <div class="container py-5 h-100"> --}}
 
-        <form class="font-poppins" action="/createcommunity" method="post" enctype="multipart/form-data">
+        <form class="font-poppins" action="{{ route('createcommunity.create') }}" method="post" enctype="multipart/form-data">
           @csrf
           <div class="createkomunitas">
             <div class="container py-5">

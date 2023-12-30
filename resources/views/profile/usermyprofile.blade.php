@@ -15,23 +15,23 @@
                     </div>
 
                 </div>
-                  <div class="flex flex-col mx-auto gap-8 font-sm">
-                      <a href="/tampil1">
-                          <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white forced-colors:appearance-auto" type="button">
-                              Dashboard
-                          </button>
-                      </a>
-                      <a href="/tampil2">
-                          <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
-                              Profile
-                          </button>
-                      </a>
-                      <a href="/profile">
-                          <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
-                              Edit Profile
-                          </button>
-                      </a>
-                  </div>
+                <div class="flex flex-col mx-auto gap-8 font-sm">
+                    <a href="{{ route('profile.dasboard') }}">
+                        <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white forced-colors:appearance-auto" type="button">
+                            Dashboard
+                        </button>
+                    </a>
+                    <a href="{{ route('profile.prifile') }}">
+                        <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
+                            Profile
+                        </button>
+                    </a>
+                    <a href="{{ route('profile.edit') }}">
+                        <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
+                            Edit profil
+                        </button>
+                    </a>
+                </div>
               </div>
               <!-- Start of right column (col-span-8) -->
               <div class="flex col-span-8 flex-col gap-2">
@@ -50,7 +50,7 @@
                                   <div class="col-4 md-6 mt-4">
                                       <p style="color: white;">{{ Auth::user()->name }} <button></button></p>
                                       <p style="color: white;">{{ Auth::user()->email }}</p>
-                                      <p style="color: white;">{{ Auth::user()->birthdate }}</p>
+                                      <p style="color: white;">{{ Auth::user()->Birthdate }}</p>
                                   </div>
                               </div>
                           </div>
@@ -61,7 +61,7 @@
                       </div>
                   @endif
               </div>
-          </div>    
+          </div>
       </div>
   </section>
 </x-app-layout>

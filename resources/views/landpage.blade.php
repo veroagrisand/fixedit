@@ -32,7 +32,7 @@
 
          <div class="mt-4 w-full min-h-screen mb-0 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins">
          @include('layouts.partials.H-landpage')
-         @include('layouts.partials.content')
+         @include('layouts.partials.AllCommunity')
         @include('layouts.partials.footer')
 
          </div>

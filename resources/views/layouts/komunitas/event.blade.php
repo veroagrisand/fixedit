@@ -5,211 +5,137 @@
         <div class="container mx-auto mt-10 sm:p-6 md:p-4 p-6">
             @include('layouts.partials.H-profilcommunity')
 
-                <div class="mt-11 w-full min-h-screen mb-0 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins pb-6">
+            <div class="grid grid-cols-12 mt-5 flex gap-6 mb-10 flex-row">
 
-
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
-                    </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                    </div>
+                <!-- Card Container -->
+                <div href="#" class="col-span-6 flex flex-row p-2 h-60 bg-white border border-gray-200 rounded-lg items-center transform transition-all hover:-translate-y-2 duration-300">
+                  <!-- Image Container -->
+                  <div class="w-full h-full">
+                    <img class="object-cover w-full h-full rounded" src="/img/Card.png" alt="">
                   </div>
-
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
+                  <!-- Text Content Container -->
+                  <div class="flex flex-col top-0 justify-between p-4">
+                    <!-- Date and Time Section -->
+                    <div class="flex flex-row gap-4 mt-7">
+                      <p class="font-bold text-sm text-black">Tanggal</p>
+                      <p class="font-bold text-sm text-black">Jam</p>
                     </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                    </div>
-                  </div>
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
-                    </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                    </div>
-                  </div>
-
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
-                    </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                    </div>
-                  </div>
-
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
-                    </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                    </div>
-                  </div>
-
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
-                    </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                    </div>
-                  </div>
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
-                    </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                    </div>
-                  </div>
-
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
-                    </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                    </div>
-                  </div>
-
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
-                    </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                    </div>
-                  </div>
-
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
-                    </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                    </div>
-                  </div>
-
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
-                    </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
-                    </div>
-                  </div>
-
-
-                  <!-- Card -->
-                  <div class="w-60 p-2 bg-white rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
-                    <!-- Image -->
-                    <img class="h-40 object-cover rounded-lg" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-                    <div class="p-2">
-                      <!-- Heading -->
-                      <h2 class="font-bold text-lg mb-2">Heading</h2>
-                      <!-- Description -->
-                      <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with Tailwind CSS. Subscribe to our YouTube channel for more...</p>
-                    </div>
-                    <!-- CTA -->
-                    <div class="m-2">
-                      <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
+                    <!-- Title and Description Section -->
+                    <div class="mb-7">
+                      <h5 class="text-2xl mt-6 font-bold text-black dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                      <p class="font-normal text-slate-900">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
                     </div>
                   </div>
                 </div>
+
+                <div href="#" class="col-span-6 flex flex-row p-2 h-60 bg-white border border-gray-200 rounded-lg items-center transform transition-all hover:-translate-y-2 duration-300">
+                  <!-- Image Container -->
+                  <div class="w-full h-full">
+                    <img class="object-cover w-full h-full rounded" src="/img/Card.png" alt="">
+                  </div>
+                  <!-- Text Content Container -->
+                  <div class="flex flex-col top-0 justify-between p-4">
+                    <!-- Date and Time Section -->
+                    <div class="flex flex-row gap-4 mt-7">
+                      <p class="font-bold text-sm text-black">Tanggal</p>
+                      <p class="font-bold text-sm text-black">Jam</p>
+                    </div>
+                    <!-- Title and Description Section -->
+                    <div class="mb-7">
+                      <h5 class="text-2xl mt-6 font-bold text-black dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                      <p class="font-normal text-slate-900">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    </div>
+                  </div>
+                </div>
+                <div href="#" class="col-span-6 flex flex-row p-2 h-60 bg-white border border-gray-200 rounded-lg items-center transform transition-all hover:-translate-y-2 duration-300">
+                  <!-- Image Container -->
+                  <div class="w-full h-full">
+                    <img class="object-cover w-full h-full rounded" src="/img/Card.png" alt="">
+                  </div>
+                  <!-- Text Content Container -->
+                  <div class="flex flex-col top-0 justify-between p-4">
+                    <!-- Date and Time Section -->
+                    <div class="flex flex-row gap-4 mt-7">
+                      <p class="font-bold text-sm text-black">Tanggal</p>
+                      <p class="font-bold text-sm text-black">Jam</p>
+                    </div>
+                    <!-- Title and Description Section -->
+                    <div class="mb-7">
+                      <h5 class="text-2xl mt-6 font-bold text-black dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                      <p class="font-normal text-slate-900">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
             </div>
         </section>
     </x-app-layout>
+{{--
+    <x-app-layout>
+        <div class="container mx-auto font-poppins">
+
+
+
+
+      <!-- Card Container -->
+      <div href="#" class="col-span-6 flex flex-row p-2 h-60 bg-white border border-gray-200 rounded-lg items-center transform transition-all hover:-translate-y-2 duration-300">
+              <!-- Image Container -->
+              <div class="w-full h-full">
+                <img class="object-cover w-full h-full rounded" src="/img/Card.png" alt="">
+              </div>
+              <!-- Text Content Container -->
+              <div class="flex flex-col top-0 justify-between p-4">
+                <!-- Date and Time Section -->
+                <div class="flex flex-row gap-4 mb-6">
+                  <p class="font-bold text-sm text-black">Tanggal</p>
+                  <p class="font-bold text-sm text-black">Jam</p>
+                </div>
+                <!-- Title and Description Section -->
+                <div>
+                  <h5 class="text-2xl mt-6 font-bold text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                  <p class="font-normal text-slate-900">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Card Container -->
+            <div href="#" class="col-span-6 flex flex-row p-2 h-60 bg-white border border-gray-200 rounded-lg items-center transform transition-all hover:-translate-y-2 duration-300">
+              <!-- Image Container -->
+              <div class="w-full h-full">
+                <img class="object-cover w-full h-full rounded" src="/img/Card.png" alt="">
+              </div>
+              <!-- Text Content Container -->
+              <div class="flex flex-col top-0 justify-between p-4">
+                <!-- Date and Time Section -->
+                <div class="flex flex-row gap-4 mb-6">
+                  <p class="font-bold text-sm text-black">Tanggal</p>
+                  <p class="font-bold text-sm text-black">Jam</p>
+                </div>
+                <!-- Title and Description Section -->
+                <div>
+                  <h5 class="text-2xl mt-6 font-bold text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                  <p class="font-normal text-slate-900">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Card Container -->
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </x-app-layout> --}}

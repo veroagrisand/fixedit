@@ -13,13 +13,18 @@ class Community extends Model
 
     protected $primaryKey = 'id_komunitas';
     protected $table = 'komunitas';
-    // public $incrementing = false; // Menonaktifkan auto-increment
+    public $incrementing = false; // Menonaktifkan auto-increment
 
     protected $fillable = [
-        // 'id_komunitas',
+        'id_komunitas',
         'nama_komunitas',
         'image_komunitas',
         'description_komunitas',
+        'KEY',
         'id_kategori',
     ];
+    public function adminCommunity()
+    {
+        return $this->hasOne(AdminCommunity::class, 'id_komunitas', 'id_komunitas');
+    }
 }

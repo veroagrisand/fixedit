@@ -24,7 +24,7 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg bg-none text-white">
                 <!-- Container wrapper -->
-                <div class="container">
+                <div class="container  fixed bg-gradient-to-t">
                     <div class="flex">
                     <!-- Logo -->
                         <div class="shrink-0 flex items-center">
@@ -69,7 +69,7 @@
                             </x-slot>
                             <x-slot name="content" >
                                 {{-- <x-dropdown-link :href="route('profile.edit')"> --}}
-                                    <x-dropdown-link href="/tampil1">
+                                    <x-dropdown-link href="{{ route('profile.dasboard') }}">
                                     {{ __('Profile') }}
                                 </x-dropdown-link>
                                 <!-- Authentication -->

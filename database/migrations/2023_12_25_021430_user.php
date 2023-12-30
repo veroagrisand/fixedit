@@ -16,13 +16,16 @@ return new class extends Migration
             $table->string('name',50);
             $table->string('email',50)->unique();
             $table->date('Birthdate');
-            $table->text('image_profile')->nullable();;
+            $table->string('Role')->default('member');
+            $table->string('KEY',5);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            
+
             // $table->primary(['email']);
+            $table->unique(['KEY']);
+
         });
     }
 

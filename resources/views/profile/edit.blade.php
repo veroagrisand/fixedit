@@ -23,27 +23,23 @@
 
         </div>
 
-            <div class="flex flex-col mx-auto gap-8 font-sm">
-            <a href="/tampil1">
-              <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white forced-colors:appearance-auto" type="button">
-                Dashboard
-              </button>
+        <div class="flex flex-col mx-auto gap-8 font-sm">
+            <a href="{{ route('profile.dasboard') }}">
+                <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white forced-colors:appearance-auto" type="button">
+                    Dashboard
+                </button>
             </a>
-
-            <a href="/tampil2">
-              <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
-                Profile
-              </button>
+            <a href="{{ route('profile.prifile') }}">
+                <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
+                    Profile
+                </button>
             </a>
-
-
-            <a href="/profile">
-              <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
-                Edit profil
-              </button>
+            <a href="{{ route('profile.edit') }}">
+                <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
+                    Edit profil
+                </button>
             </a>
-
-            </div>
+        </div>
             </div>
 
         <!-- Start of right column (col-span-8) -->

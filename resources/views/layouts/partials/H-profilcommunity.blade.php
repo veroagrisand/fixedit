@@ -19,27 +19,33 @@
                         </div>
                         <div class="font-poppins  flex space-x-8 sm:text-xs md:text-sm lg:text-base mt-6 items-center mb-6">
                              <div class="hidden sm:-my-px sm:ms-10 sm:flex gap-9">
-                                <x-nav-link href="{{ route('mycommunity.Event',['id'=> $komunitass->id_komunitas]) }}"  :active="request()->routeIs('mycommunity.Event',['id'=> $komunitass->id_komunitas])">
+                                <x-nav-link href="{{ route('mycommunity.Event',['id_komunitas'=> $komunitass->id_komunitas]) }}"  :active="request()->routeIs('mycommunity.Event',['id_komunitas'=> $komunitass->id_komunitas])">
                                     {{ __('Event') }}
                                 </x-nav-link>
 
-                                <x-nav-link href="{{ route('mycommunity.Galery',['id'=> $komunitass->id_komunitas]) }}" :active="request()->routeIs('mycommunity.Galery',['id'=> $komunitass->id_komunitas])">
+                                <x-nav-link href="{{ route('mycommunity.Galery',['id_komunitas'=> $komunitass->id_komunitas]) }}" :active="request()->routeIs('mycommunity.Galery',['id_komunitas'=> $komunitass->id_komunitas])">
                                     {{ __('Galery') }}
                                 </x-nav-link>
 
-                                <x-nav-link href="{{ route('mycommunity.Forum',['id'=> $komunitass->id_komunitas]) }}" :active="request()->routeIs('mycommunity.Forum',['id'=> $komunitass->id_komunitas])">
+                                <x-nav-link href="{{ route('mycommunity.Forum',['id_komunitas'=> $komunitass->id_komunitas]) }}" :active="request()->routeIs('mycommunity.Forum',['id_komunitas'=> $komunitass->id_komunitas])">
                                     {{ __('Forum') }}
                                 </x-nav-link>
 
-                                <x-nav-link href="{{ route('mycommunity.Event',['id'=> $komunitass->id_komunitas]) }}" :active="request()->routeIs('contact')">
+                                <x-nav-link href="{{ route('mycommunity.Event',['id_komunitas'=> $komunitass->id_komunitas]) }}" :active="request()->routeIs('contact')">
                                     {{ __('Edit') }}
                                 </x-nav-link>
                             </div>
+                            <button class="py-2 px-6 flex bg-white  hover:bg-purple-500 rounded-full duration-300">
+                                <x-nav-link class="text-black my-auto hover:text-purple text-justify text-sm font-normal" href="{{ route('mycommunity.AddEvent',['id_komunitas'=> $komunitass->id_komunitas]) }}" :active="request()->routeIs('mycommunity.AddEvent',['id'=> $komunitass->id_komunitas])">
+                                    {{ __('Add Event') }}
+                                </x-nav-link>
+                                {{-- <h1 > Add Event</h1> --}}
+                            </button>
 
 
-                            <button class="py-2 px-6 flex bg-white hover:bg-purple-500 rounded-full duration-300">
-                              <h1 class="text-purple-900 my-auto hover:text-purple text-justify text-sm font-normal"> Add Event</h1>
-                          </button>
+
+
+
                         </div>
                     </div>
                 </div>

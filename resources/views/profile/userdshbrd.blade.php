@@ -16,17 +16,17 @@
                   </div>
 
                   <div class="flex flex-col mx-auto gap-8 font-sm">
-                      <a href="/tampil1">
+                      <a href="{{ route('profile.dasboard') }}">
                           <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white forced-colors:appearance-auto" type="button">
                               Dashboard
                           </button>
                       </a>
-                      <a href="/tampil2">
+                      <a href="{{ route('profile.prifile') }}">
                           <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
                               Profile
                           </button>
                       </a>
-                      <a href="/profile">
+                      <a href="{{ route('profile.edit') }}">
                           <button class="bg-purple-700 text-slate-200 font-md hover:font-md rounded-full w-full py-3 px-4 hover:text-black hover:bg-white" type="button">
                               Edit profil
                           </button>
@@ -45,7 +45,9 @@
                                   <div class="card p-6 mt-4">
                                       <div class="">
                                           <h1 class="text-base">Active Community</h1>
-                                          <h1 class="card-text font-bold">4</h1>
+                                          <h1 class="card-text font-bold">
+                                            Belum
+                                          </h1>
                                       </div>
                                   </div>
                               </div>
@@ -53,7 +55,20 @@
                                   <div class="card p-6 mt-4">
                                       <div class="">
                                           <h1 class="text-base">My Community</h1>
-                                          <h1 class="card-text font-bold">1</h1>
+                                          <h1 class="card-text font-bold">
+                                            @php
+                                                $count = 0;
+                                            @endphp
+                                            @foreach ($komunitas as $community)
+                                                @if ($community->KEY == Auth::user()->KEY)
+                                                @php
+                                                    $count++; // Increment the counter if the condition is met
+
+                                                @endphp
+                                            @endif
+                                            @endforeach
+                                            {{ $count }}
+                                          </h1>
                                       </div>
                                   </div>
                               </div>
