@@ -31,7 +31,7 @@
                                     {{ __('Forum') }}
                                 </x-nav-link>
 
-                                <x-nav-link href="{{ route('mycommunity.Event',['id_komunitas'=> $komunitass->id_komunitas]) }}" :active="request()->routeIs('contact')">
+                                <x-nav-link href="{{ route('mycommunity.Edit',['id_komunitas'=> $komunitass->id_komunitas]) }}" :active="request()->routeIs('contact')">
                                     {{ __('Edit') }}
                                 </x-nav-link>
                             </div>

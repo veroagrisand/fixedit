@@ -32,7 +32,7 @@ class AuthenticatedSessionController extends Controller
         $user = auth()->user();
 
         if ($user->role === 'superuser') {
-            return redirect()->route('superuser.dashboard');
+            return redirect()->route('superuser.Home');
         }
 
         return redirect()->route('dashboard');

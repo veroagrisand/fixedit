@@ -93,7 +93,7 @@ class CreateCommunityController extends Controller
             $komunitass = Community::where('id_komunitas', $id)->first(); // pastikan hanya mendapatkan satu objek
             return view('layouts.komunitas.join', compact('komunitass'));
 
-            
+
         }
         public function mycommunity(){
             // $komunitas=Community::all();
@@ -122,6 +122,50 @@ class CreateCommunityController extends Controller
         {
             $komunitass = Community::where('id_komunitas', $id)->first(); // pastikan hanya mendapatkan satu objek
             return view('layouts.komunitas.forum', compact('komunitass'));
+        }
+        public function edit($id_komunitas)
+        {
+            $komunitass = Community::find($id_komunitas);
+
+            if (!$komunitass) {
+                return redirect()->back()->with('error', 'Community not found.');
+            }
+
+            return view('layouts.komunitas.edit', compact('komunitass'));
+        }
+
+        public function update(Request $request, $id_komunitas)
+        {
+            $request->validate([
+                'new_image' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+                'new_name' => 'string|max:255',
+                'description_komunitas' => 'string|max:255',
+            ]);
+
+            $komunitass = Community::find($id_komunitas);
+
+            if (!$komunitass) {
+                return redirect()->back()->with('error', 'Community not found.');
+            }
+
+            // Check if a new image is uploaded
+            if ($request->hasFile('new_image')) {
+                // Store the new image and update the database field
+                $imagePath = $request->file('new_image')->store('community_images', 'public');
+                $komunitass->image_komunitas = $imagePath;
+            }
+
+            if ($request->filled('new_name')) {
+                $komunitass->nama_komunitas = $request->input('new_name');
+            }
+
+            if ($request->filled('description_komunitas')) {
+                $komunitass->description_komunitas = $request->input('description_komunitas');
+            }
+
+            $komunitass->save();
+
+            return redirect()->back()->with('success', 'Community updated successfully.');
         }
 
         public function addevent(Request $request, $id)

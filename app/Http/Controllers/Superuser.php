@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Community;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -10,9 +12,33 @@ class Superuser extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    // public function index()
+    // {
+    //     return view('SuperUser.SUNavbar');
+    // }
+    public function Home()
     {
-        return view('SuperUser.index');
+        $User =User::all();
+        return view('SuperUser.SUhome',compact('User'));
+    }
+    public function kelola()
+    {
+        return view('SuperUser.SUkelola');
+    }
+    public function user()
+    {
+        $User =User::all();
+        return view('SuperUser.SUusers',compact('User'));
+    }
+    public function kegiatan(Request $request, $id)
+    {
+        $komunitass = Community::where('id_komunitas', $id)->first(); // pastikan hanya mendapatkan satu objek
+        return view('SuperUser.SUkelolakegiatan', compact('komunitass'));
+    }
+    public function komunitas(Request $request, $id)
+    {
+        $komunitass = Community::where('id_komunitas', $id)->first(); // pastikan hanya mendapatkan satu objek
+        return view('SuperUser.SUkelolakomunitas', compact('komunitass'));
     }
 
     public function logout()

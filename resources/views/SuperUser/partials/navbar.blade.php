@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -18,22 +17,18 @@
     <!-- Link CSS ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <!-- Link CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
     <!-- Link Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="app.v1.css">
-
+<link rel="stylesheet" href="{{ asset('app.v1.css') }}">
 </head>
 <body data-ng-app>
-
 	<aside class="left-panel">
-
         <div class="navigation">
             <div class="user text-center">
-                <img src="img/konekin-bulat.png" class="img-circle" alt="...">
+                <img src="{{ asset('img/konekin-bulat.png') }}" class="img-circle" alt="...">
                 <h2 class="user-name">{{ Auth::user()->name }}</h2>
                 <h3 class="user-name">{{ Auth::user()->email }}<h3>
                  <div class="dropdown user-login">
@@ -43,17 +38,16 @@
 
           <nav class="navigation">
             <ul class="list-unstyled">
-                <li class="active"><a href="/su"><i class="bi bi-house-door"></i><span class="nav-label">Home</span></a></li>
-                <li class="has-submenu active"><a href="/sucommunity"><i class="bi bi-person-raised-hand"></i> <span class="nav-label ">Mengelola Komunitas</span></a>
-                    <ul class="list-unstyled">
+                <li class="active"><a href="{{ route('superuser.Home') }}"><i class="bi bi-house-door"></i><span class="nav-label">Home</span></a></li>
+                <li class="has-submenu active"><a href="{{ route('superuser.kelola') }}"><i class="bi bi-person-raised-hand"></i> <span class="nav-label ">Mengelola Komunitas</span></a>
+                    {{-- <ul class="list-unstyled">
                       <li><a href="?modul=kasir">Kasir</a></li>
                       <li><a href="?modul=dokter">Dokter</a></li>
                       <li><a href="?modul=kamar">Kamar</a></li>
                       <li><a href="?modul=jenispelayanan">Jenis Pelayanan</a></li>
-                    </ul>
+                    </ul> --}}
               </li>
-               <li class="has-submenu active"><a href="/suu"><i class="bi bi-people"></i><span class="nav-label">Mengelola User</span></a></li>
-
+               <li class="has-submenu active"><a href="{{ route('superuser.user') }}"><i class="bi bi-people"></i><span class="nav-label">Mengelola User</span></a></li>
           </ul>
         </nav>
       </div>
@@ -63,7 +57,7 @@
   </aside>
   <!-- Aside Ends-->
 
-  <section class="content">
+  {{-- <section class="content">
 
       <header class="top-head container-fluid">
           <div class="headaja py-2">
@@ -75,7 +69,6 @@
 
       <div class="warper container-fluid">
 
-          @yield('content')
           @include('SuperUser.SUhome')
 
       </div>
@@ -88,7 +81,7 @@
       </footer>
 
 
-  </section>
+  </section> --}}
   <!-- Content Block Ends Here (right box)-->
 
 
