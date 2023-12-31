@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('KEY',5);
 
             $table->primary(['id_komunitas']);
-            $table->unique(['KEY']);
+            // $table->unique(['KEY']);
 
             $table->timestamps();
         });

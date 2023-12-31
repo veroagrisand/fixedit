@@ -16,7 +16,7 @@
       </div>
 
 
-      @include('layouts.partials.AllCommunity')
+      @include('layouts.partials.NCommunity')
     </div>
 </section>
 </x-app-layout>

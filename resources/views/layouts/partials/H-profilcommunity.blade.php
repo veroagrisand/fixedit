@@ -8,7 +8,7 @@
                     </div>
 
                     <div class="col-span-8 flex-row gap-2  mt-16 ">
-                        <h1 class="sm:ms-10 font-bold font-poppins text-white sm:text-[16px] md:text-[22px] lg:text-[32px]">{{ $komunitass->nama_komunitas }}</h1>
+                        <h1 class="sm:ms-10 font-bold font-poppins text-white sm:text-[16px] md:text-[22px] lg:text-[32px]">{{ $komunitass->nama_komunitas }} <button>JOINED</button></h1>
                         {{-- <p class="font-poppins text-white sm:text-[8px] md:text-[12px] lg:text-[16px]">Pemrograman website</p> --}}
                         <div>
                             <p class="sm:ms-10 font-poppins text-white text-base mt-8 sm:text-[8px] md:text-[10px] lg:text-[14px]">{{ $komunitass->description_komunitas }}</p>

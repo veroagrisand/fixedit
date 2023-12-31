@@ -19,7 +19,7 @@ class Superuser extends Controller
     {
         Auth::logout();
 
-        return redirect()->route('/')->with('logoutMessage', 'You have been logged out. Please log in again.');
+        return redirect()->route('landing.page')->with('logoutMessage', 'You have been logged out. Please log in again.');
     }
 
     /**

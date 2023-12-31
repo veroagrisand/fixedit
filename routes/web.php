@@ -1,13 +1,14 @@
 <?php
 use App\Http\Controllers\CreateCommunityController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Superuser;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('landpage');
-});
+})->name('landing.page');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', function () {return view('layouts.dashboard');})->name('dashboard');
@@ -22,8 +23,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::delete('/Profile-Edit', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     //membuat komunitas
-    Route::get('/createcommunity-member', [CreateCommunityController::class, 'create'])->name('createcommunity.create');
-    Route::post('/createcommunity-member', [CreateCommunityController::class, 'store'])->name('createcommunity.store');
+    Route::get('/createcommunity', [CreateCommunityController::class, 'create'])->name('createcommunity.create');
+    Route::post('/createcommunity', [CreateCommunityController::class, 'store'])->name('createcommunity.store');
+
+    Route::get('/JoinCommunity/{id_komunitas}', [CreateCommunityController::class, 'Join'])->name('Community.join');
+
 
     // Route::middleware(['member'])->group(function () {
 
@@ -37,7 +41,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/mycommunity/galery/{id_komunitas}', [CreateCommunityController::class, 'galery'])->name('mycommunity.Galery');
         Route::get('/mycommunity/forum/{id_komunitas}', [CreateCommunityController::class, 'forum'])->name('mycommunity.Forum');
         Route::get('/mycommunity/edit/{id_komunitas}', [CreateCommunityController::class, 'edit'])->name('mycommunity.Edit');
-        Route::get('/mycommunity/add-event/{id_komunitas}', [CreateCommunityController::class, 'addEvent'])->name('mycommunity.AddEvent');
+
+
+        Route::get('/mycommunity/add-event/{id_komunitas}', [KegiatanController::class, 'addEvent'])->name('mycommunity.AddEvent');
         Route::post('/mycommunity/add-event-post/{id_komunitas}', [CreateCommunityController::class, 'addEventPost'])->name('mycommunity.addEventPost');
     });
     //superuser akses

@@ -26,27 +26,6 @@
 
 <link rel="stylesheet" href="app.v1.css">
 
-    <!-- Fonts  -->
-   <!--<link href='http://fonts.googleapis.com/css?family=Hind:400,500,600,300' rel='stylesheet' type='text/css'>-->
-
-    {{-- <script language="javascript">
-      function keluar()
-      {
-      tanya=confirm("Apakah anda yakin akan keluar ?")
-        if (tanya !="0")
-        {
-        top.location="./logout.php"
-        }
-      }
-    </script> --}}
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 <body data-ng-app>
 
@@ -63,121 +42,54 @@
           </div>
 
           <nav class="navigation">
-              <ul class="list-unstyled">
-                  <li class="active"><a href="/su"><i class="fa fa-laptop"></i><span class="nav-label">Home</span></a></li>
-                  <li class="has-submenu active"><a href="/si"><i class="fa fa-file-text"></i> <span class="nav-label ">Mengelola Komunitas</span></a>
-                      {{-- <ul class="list-unstyled">
-                        <li><a href="?modul=kasir">Kasir</a></li>
-                        <li><a href="?modul=dokter">Dokter</a></li>
-                        <li><a href="?modul=kamar">Kamar</a></li>
-                        <li><a href="?modul=jenispelayanan">Jenis Pelayanan</a></li>
-                      </ul> --}}
-                </li>
-                 <li class="has-submenu active"><a href="/si"><i class="fa fa-mail-forward"></i> <span class="nav-label">Mengelola User</span></a></li>
-                 <li class="has-submenu active"><a href="/su"><i class="fa fa-mail-forward"></i> <span class="nav-label">Mengelola Kegiatan</span></a></li>
+            <ul class="list-unstyled">
+                <li class="active"><a href="/su"><i class="bi bi-house-door"></i><span class="nav-label">Home</span></a></li>
+                <li class="has-submenu active"><a href="/sucommunity"><i class="bi bi-person-raised-hand"></i> <span class="nav-label ">Mengelola Komunitas</span></a>
+                    <ul class="list-unstyled">
+                      <li><a href="?modul=kasir">Kasir</a></li>
+                      <li><a href="?modul=dokter">Dokter</a></li>
+                      <li><a href="?modul=kamar">Kamar</a></li>
+                      <li><a href="?modul=jenispelayanan">Jenis Pelayanan</a></li>
+                    </ul>
+              </li>
+               <li class="has-submenu active"><a href="/suu"><i class="bi bi-people"></i><span class="nav-label">Mengelola User</span></a></li>
 
-
-            </ul>
-          </nav>
-        </div>
-
-
-
-    </aside>
-    <!-- Aside Ends-->
-
-    <section class="content">
-
-        <header class="top-head container-fluid text-white">
-            <div class="headaja py-2">
-                @yield('tittle')
-            </div>
-        </header>
-        <!-- Header Ends -->
-
-
-        <div class="warper container-fluid">
-
-            @yield('content')
-
-        </div>
-        <!-- Warper Ends Here (working area) -->
-
-
-        @include('layouts.partials.footer')
-
-
-    </section>
-    <!-- Content Block Ends Here (right box)-->
-
-
-    <!-- JQuery v1.9.1 -->
-  	<script src="assets/js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
-     <script src="assets/js/plugins/underscore/underscore-min.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-
-    <!-- Globalize -->
-    <script src="assets/js/globalize/globalize.min.js"></script>
-
-    <!-- NanoScroll -->
-    <script src="assets/js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
-
-    <!-- Chart JS -->
-    <script src="assets/js/plugins/DevExpressChartJS/dx.chartjs.js"></script>
-    <script src="assets/js/plugins/DevExpressChartJS/world.js"></script>
-   	<!-- For Demo Charts -->
-    <script src="assets/js/plugins/DevExpressChartJS/demo-charts.js"></script>
-    <script src="assets/js/plugins/DevExpressChartJS/demo-vectorMap.js"></script>
-
-    <!-- Sparkline JS -->
-    <script src="assets/js/plugins/sparkline/jquery.sparkline.min.js"></script>
-    <!-- For Demo Sparkline -->
-    <script src="assets/js/plugins/sparkline/jquery.sparkline.demo.js"></script>
-
-    <!-- Angular JS -->
-    <!-- ToDo List Plugin -->
-    <script src="assets/js/angular/todo.js"></script>
-
-    <script src="assets/js/jquery.validate.js"></script>
+          </ul>
+        </nav>
+      </div>
 
 
 
-    <!-- Calendar JS -->
-    <script src="assets/js/plugins/calendar/calendar.js"></script>
-    <!-- Calendar Conf -->
-    <script src="assets/js/plugins/calendar/calendar-conf.js"></script>
+  </aside>
+  <!-- Aside Ends-->
 
-      <!-- TypeaHead -->
-    <script src="assets/js/plugins/typehead/typeahead.bundle.js"></script>
+  <section class="content">
 
-    <script src="ambil.js"></script>
-
-    <!-- InputMask -->
-    <script src="assets/js/plugins/inputmask/jquery.inputmask.bundle.js"></script>
-
-    <!-- TagsInput -->
-    <script src="assets/js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
-
-    <!-- Chosen -->
-    <script src="assets/js/plugins/bootstrap-chosen/chosen.jquery.js"></script>
-
-    <!-- moment -->
-    <script src="assets/js/moment/moment.js"></script>
-
-    <!-- DateTime Picker -->
-    <script src="assets/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
-
-    <!-- Data Table -->
-    // <script src="assets/js/plugins/datatables/jquery.dataTables.js"></script>
-    <script src="assets/js/plugins/datatables/DT_bootstrap.js"></script>
-    <script src="assets/js/plugins/datatables/jquery.dataTables-conf.js"></script>
-
-    <!-- Custom JQuery -->
-  	<script src="assets/js/app/custom.js" type="text/javascript"></script>
+      <header class="top-head container-fluid">
+          <div class="headaja py-2">
+              @yield('tittle')
+          </div>
+      </header>
+      <!-- Header Ends -->
 
 
+      <div class="warper container-fluid">
 
+          @yield('content')
+          @include('SuperUser.SUhome')
+
+      </div>
+      <!-- Warper Ends Here (working area) -->
+
+
+      <footer class="container-fluid footer">
+          Copyright &copy; 2023 <a href="#" >@Konekin</a>
+          <a href="#" class="pull-right scrollToTop"><i class="fa fa-chevron-up"></i></a>
+      </footer>
+
+
+  </section>
+  <!-- Content Block Ends Here (right box)-->
 
 
 </body>

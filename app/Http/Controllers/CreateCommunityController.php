@@ -6,6 +6,7 @@ use App\Models\AdminCommunity;
 use App\Models\Community;
 use App\Models\Kategori;
 use App\Models\kegiatan;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -81,10 +82,18 @@ class CreateCommunityController extends Controller
             'email' => Auth::user()->email,
             'id_komunitas'=>$id_komunitas,
         ]);
+
         Auth::user()->update(['role' => 'admin_group']);
 
         return redirect()->route('community');
 
+        }
+        public function join(Request $request, $id)
+        {
+            $komunitass = Community::where('id_komunitas', $id)->first(); // pastikan hanya mendapatkan satu objek
+            return view('layouts.komunitas.join', compact('komunitass'));
+
+            
         }
         public function mycommunity(){
             // $komunitas=Community::all();
