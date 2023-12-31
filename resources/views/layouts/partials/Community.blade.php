@@ -15,9 +15,9 @@
               <p class="text-sm text-gray-600">{{ $community->description_komunitas }}</p>
             </div>
             <!-- CTA -->
-            <div class="m-2 text-sm">
+            {{-- <div class="m-2 text-sm">
               <a role='button' href='#' class="text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
-            </div>
+            </div> --}}
           </div>
           @endif
         @endforeach
