@@ -15,6 +15,6 @@ class AdminGroupMiddleware
             return $next($request);
         }
 
-        abort(403, 'Unauthorized');
+        abort(403, 'MAAF');
     }
 }

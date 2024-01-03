@@ -15,7 +15,11 @@
                         </div>
                         <!-- CTA -->
                         <div class="m-2 text-sm">
-                            <a role='button' href='{{ route('Community.join',['id_komunitas'=> $community->id_komunitas]) }}' class="text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
+                            @if (auth()->user()->joints->contains('id_komunitas', $community->id_komunitas))
+                                <a role='button' href='{{ route('Community.join',['id_komunitas'=> $community->id_komunitas]) }}' class="text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">My Community</a>
+                            @else
+                                <a role='button' href='{{ route('Community.join',['id_komunitas'=> $community->id_komunitas]) }}' class="text-white p-6 bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">See Community</a>
+                            @endif
                         </div>
                     </div>
                 @endif

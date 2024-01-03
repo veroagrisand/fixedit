@@ -21,14 +21,15 @@
                             <hr>
                         </div>
 
-                        <form action="" class="formkelolakomunitas">
-
+                        <form action="{{ route('superuser.update', ['id_komunitas' => $komunitass->id_komunitas ]) }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            @method('PUT')
                             <div class="row">
                                 <div class="col-3">
                                     <h4>Nama komunitas</h4>
                                 </div>
                                 <div class="col-3">
-                                    <textarea name="namakomunitas" id="namakomunitas" cols="30" rows="3">{{ $komunitass->nama_komunitas }} </textarea>
+                                    <textarea name="new_name" id="namakomunitas" cols="30" rows="3">{{ $komunitass->nama_komunitas }} </textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -36,7 +37,7 @@
                                     <h4>Deskripsi komunitas</h4>
                                 </div>
                                 <div class="col-3">
-                                    <textarea name="namakomunitas" id="namakomunitas" cols="30" rows="3">{{ $komunitass->description_komunitas }}</textarea>
+                                    <textarea name="description_komunitas" id="namakomunitas" cols="30" rows="3">{{ $komunitass->description_komunitas }}</textarea>
                                 </div>
                             </div>
                             {{-- <div class="row">

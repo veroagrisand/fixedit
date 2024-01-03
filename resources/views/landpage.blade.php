@@ -1,55 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KONEKIN</title>
-    <!-- Link CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <!-- Link CSS ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="{{ asset('style.css')}}">
-
-  </head>
-  <body class="bg-black">
-    <section class="container mx-auto mt-32">
-        <div class="grid grid-cols-12 ">
-            <div>
-                <nav class="navbar sticky-top bg-none">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="/">
-                        <img src="img/konekin-bulat.png" alt="" width="41" height="41" class="d-inline-block align-text-top"><h4 class="d-inline-block align-text-top ms-2 mt-1">Berrvy</h4>
-                      </a>
-                      <div class="d-grid gap-2 d-md-flex justify-content-md-end" >
-                        <a href="/login"><button type="button" class="btn btn-outline-light col-sm-9" id="btn2" >Sign in</button></a>
-                        <a href="/register"><button  type="button" class="btn col-sm-9" id="btn1">Sign up</button></a>
-
-                    </div>
-                  </nav>
-                  </div>
-
-         <div class="mt-4 w-full min-h-screen mb-0 flex-wrap gap-6  flex justify-center items-center mx-auto font-poppins">
-         @include('layouts.partials.H-landpage')
-         @include('layouts.partials.AllCommunity')
-        @include('layouts.partials.footer')
-
-         </div>
-
-
-
-
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Konekin</title>
+  <!-- Link CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- Link CSS ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!-- Link Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="{{ asset('style.css')}}">
+  <!-- Scripts -->
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+<body class="font-poppins container antialiased bg-gradient-to-b from-purple-950 to-slate-950 ">
+  <div class="min-h-screen">
+    <div class="flex items-center mt-8"  >
+      <img src="{{ asset('img/konekin-bulat.png')}}" alt="">
+      <h1 class="text-white text-lg font-bold mx-2">Konekin</h1>
+      <div class="flex flex-grow"></div>
+      <div class="flex justify-end">
+        <div class="flex justify-end gap-6 text-white font-medium">
+          <button class="border border-2  border-fuchsia-700  px-8 py-2 rounded-lg  hover:text-purple-800  hover:bg-slate-100 hover:scale-105 transition"><a href="/login " class="text-inherit">Sign In</a></button>
+          <button class="bg-purple-800 px-4 py-2 rounded-lg hover:scale-105 transition" ><a href="/register" class="text-inherit">Sign Up</button>
         </div>
-
-    </section>
-
-
-<!-- -->
-<script src="script.js"></script>
-<!-- Script JS Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      </div>
+    </div>
+    <div class="mt-40">
+      <p class="font-bold  mx-2">
+        <span class="text-white font-normal">Assalamualaikum,</span>
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 text-lg">Konekers!</span>
+      </p>
+      <h1 class="w-full h-full text-left text-8xl  font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">Would You Like To Join Or Create a Community?</h1>
+      <p class="text-white text-lg mx-2"> <span class="font-bold"> Welcome to Konekin,</span>  where your vision of a strong community becomes a reality</p>
+    </div>
+    <div class="mt-8 text-white flex items-center ">
+      <button class="font-medium gap-2 flex w-auto mx-2 scale-120 bg-purple-800 px-4 py-3 rounded-full hover:scale-105 transition">Get Started
+        <img class="animate-bounce" src="{{ asset('img/join.png')}}" alt="">
+      </button>
+    </div>
+    @include('layouts.partials.AllCommunity')
+    @include('layouts.partials.footer')
+  </div>
 </body>
 </html>

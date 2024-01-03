@@ -24,7 +24,7 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg bg-none text-white">
                 <!-- Container wrapper -->
-                <div class="container  fixed bg-gradient-to-t">
+                <div class="container  fixed ">
                     <div class="flex">
                     <!-- Logo -->
                         <div class="shrink-0 flex items-center">

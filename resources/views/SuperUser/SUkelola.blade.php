@@ -25,7 +25,6 @@
             <div class="row">
                 @foreach ($komunitas as $community)
 
-
                 <div class="col-3 mx-3 mt-3">
                     <div class="card" style="width: 18rem;">
                         <div class="cardkomunitas">
@@ -33,7 +32,7 @@
                           <p class="card-text">{{ $community->description_komunitas }}</p>
                           <div class="row">
                             <div class="col ">
-                                <a href="{{ route('superuser.komunitas',['id_komunitas'=> $community->id_komunitas]) }}" class="btn btnn ">Kelola Komunitas</a>
+                                <a href="{{ route('superuser.edit',['id_komunitas'=> $community->id_komunitas]) }}" class="btn btnn ">Kelola Komunitas</a>
                             </div>
                             <div class="col">
                                 <a href="/sukk" class="btn btnn">Kelola Kegiatan</a>
@@ -42,6 +41,7 @@
                         </div>
                       </div>
                 </div>
+
                 @endforeach
             </div>
         </div>

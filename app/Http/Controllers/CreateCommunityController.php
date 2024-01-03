@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\AdminCommunity;
 use App\Models\Community;
+use App\Models\joins;
 use App\Models\Kategori;
 use App\Models\kegiatan;
 use App\Models\User;
@@ -94,7 +95,22 @@ class CreateCommunityController extends Controller
             return view('layouts.komunitas.join', compact('komunitass'));
 
 
+
         }
+
+        public function joinS(Request $request, $id)
+        {
+            $komunitass = Community::where('id_komunitas', $id)->first();
+            joins::create([
+                'id_komunitas'=>$id,
+                'email'=> Auth::user()->email,
+                'KEY' => Auth::user()->KEY,
+            ]);
+            // dd($joint);
+
+            return redirect()->route('Community.join',['id_komunitas'=> $komunitass->id_komunitas]);
+
+            }
         public function mycommunity(){
             // $komunitas=Community::all();
              // Mendapatkan pengguna yang sedang login

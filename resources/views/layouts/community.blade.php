@@ -21,6 +21,5 @@
   </div>
 
   @include('layouts.partials.Community')
-
 </div>
 </x-app-layout>

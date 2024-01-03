@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use App\Models\Community;
+use App\Models\joins;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Auth;
 
@@ -31,7 +32,8 @@ class AppServiceProvider extends ServiceProvider
         Blade::if('user', function () {
             return Auth::check();
         });
-    
+        View::share('joints', joins::all());
+
         Blade::directive('user', function () {
             return '<?php $user = Auth::user(); ?>';
         });

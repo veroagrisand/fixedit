@@ -8,7 +8,7 @@
         <p class="text-white text-center my-4 text-xl">Join the community,<strong> and it's free! </strong></p>
 
         <div class="mt-5 col-md-4 mx-auto text-center mb-20">
-          <a href="/community">
+          <a href="{{ route('community') }}">
             <button class="btn hover:shadow-purple-900 transition duration-300 ease-in-out" type="button" id="button-addon3">Join Community</button>
           </a>
         </div>

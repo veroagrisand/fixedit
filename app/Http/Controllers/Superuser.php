@@ -35,11 +35,11 @@ class Superuser extends Controller
         $komunitass = Community::where('id_komunitas', $id)->first(); // pastikan hanya mendapatkan satu objek
         return view('SuperUser.SUkelolakegiatan', compact('komunitass'));
     }
-    public function komunitas(Request $request, $id)
-    {
-        $komunitass = Community::where('id_komunitas', $id)->first(); // pastikan hanya mendapatkan satu objek
-        return view('SuperUser.SUkelolakomunitas', compact('komunitass'));
-    }
+    // public function komunitas(Request $request, $id)
+    // {
+    //     $komunitass = Community::where('id_komunitas', $id)->first(); // pastikan hanya mendapatkan satu objek
+    //     return view('SuperUser.SUkelolakomunitas', compact('komunitass'));
+    // }
 
     public function logout()
     {
@@ -47,52 +47,48 @@ class Superuser extends Controller
 
         return redirect()->route('landing.page')->with('logoutMessage', 'You have been logged out. Please log in again.');
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function edit($id_komunitas)
     {
-        //
-    }
+        $komunitass = Community::find($id_komunitas);
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
+        if (!$komunitass) {
+            return redirect()->back()->with('error', 'Community not found.');
+        }
+            return view('SuperUser.Sukelolakomunitas', compact('komunitass'));
     }
+    public function update(Request $request, $id_komunitas)
+        {
+            $request->validate([
+                'new_image' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+                'new_name' => 'string|max:255',
+                'description_komunitas' => 'string|max:255',
+            ]);
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
+            $komunitass = Community::find($id_komunitas);
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
+            if (!$komunitass) {
+                return redirect()->back()->with('error', 'Community not found.');
+            }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
+            // Check if a new image is uploaded
+            if ($request->hasFile('new_image')) {
+                // Store the new image and update the database field
+                $imagePath = $request->file('new_image')->store('community_images', 'public');
+                $komunitass->image_komunitas = $imagePath;
+            }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
+            if ($request->filled('new_name')) {
+                $komunitass->nama_komunitas = $request->input('new_name');
+            }
+
+            if ($request->filled('description_komunitas')) {
+                $komunitass->description_komunitas = $request->input('description_komunitas');
+            }
+
+            $komunitass->save();
+
+            // return redirect()->back()->with('success', 'Community updated successfully.');
+            return view('SuperUser.SUkelola');
+        }
+
 }

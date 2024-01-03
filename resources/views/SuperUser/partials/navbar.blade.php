@@ -22,24 +22,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ asset('app.v1.css') }}">
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+  <!-- Link Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body data-ng-app>
+<body data-ng-app class="font-poppins">
 	<aside class="left-panel">
         <div class="navigation">
-            <div class="user text-center">
-                <img src="{{ asset('img/konekin-bulat.png') }}" class="img-circle" alt="...">
-                <h2 class="user-name">{{ Auth::user()->name }}</h2>
-                <h3 class="user-name">{{ Auth::user()->email }}<h3>
-                 <div class="dropdown user-login">
+            <div class=" text-center flex flex-col items-center text-white">
+                <img src="{{ asset('img/konekin-bulat.png') }}" class="img-circle mb-3" alt="...">
+                <h2 class="user-name text-3xl font-semibold mb-1">{{ Auth::user()->name }}</h2>
+                <h3 class="user-name mb-1">{{ Auth::user()->email }}<h3>
+                 <div class="dropdown user-login bg-purple-800 mt-3 px-4 py-2 rounded-full text-[12px]">
                   <a role="menuitem" onclick="keluar()"  href="{{ route('Superuser.logout') }}"><i class="bi bi-box-arrow-in-left"></i> Log Out</a>
                 </div>
           </div>
 
           <nav class="navigation">
             <ul class="list-unstyled">
-                <li class="active"><a href="{{ route('superuser.Home') }}"><i class="bi bi-house-door"></i><span class="nav-label">Home</span></a></li>
-                <li class="has-submenu active"><a href="{{ route('superuser.kelola') }}"><i class="bi bi-person-raised-hand"></i> <span class="nav-label ">Mengelola Komunitas</span></a>
+                <li class=""><a href="{{ route('superuser.Home') }}"><i class="bi bi-house-door"></i><span class="nav-label">Home</span></a></li>
+                <li class="has-submenu "><a href="{{ route('superuser.kelola') }}"><i class="bi bi-person-raised-hand"></i> <span class="nav-label ">Mengelola Komunitas</span></a>
                     {{-- <ul class="list-unstyled">
                       <li><a href="?modul=kasir">Kasir</a></li>
                       <li><a href="?modul=dokter">Dokter</a></li>
@@ -47,7 +51,7 @@
                       <li><a href="?modul=jenispelayanan">Jenis Pelayanan</a></li>
                     </ul> --}}
               </li>
-               <li class="has-submenu active"><a href="{{ route('superuser.user') }}"><i class="bi bi-people"></i><span class="nav-label">Mengelola User</span></a></li>
+               <li class="has-submenu "><a href="{{ route('superuser.user') }}"><i class="bi bi-people"></i><span class="nav-label">Mengelola User</span></a></li>
           </ul>
         </nav>
       </div>

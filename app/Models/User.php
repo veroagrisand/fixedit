@@ -13,6 +13,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, HasRoles;
 
+
     /**
      * The attributes that are mass assignable.
      *
@@ -28,6 +29,7 @@ class User extends Authenticatable
         'password',
         'avatar'
     ];
+
 
     /**
      * The attributes that should be hidden for serialization.
@@ -79,6 +81,18 @@ class User extends Authenticatable
     {
         return $this->hasMany(AdminCommunity::class, 'email', 'email');
     }
+    // public function join()
+    // {
+    //     return $this->hasOne(joins::class, 'KEY'); // 'user_id' should be replaced with the actual foreign key column name
+    // }
+    public function joints()
+    {
+        return $this->hasMany(joins::class, 'KEY', 'KEY'); // Assuming 'KEY' is the foreign key in the 'joint' table
+    }
+    public function komunitas()
+    {
+        return $this->belongsTo(Community::class, 'id_komunitas', 'id_komunitas');
+    }
 
     // public function isMember()
     // {
@@ -94,7 +108,7 @@ class User extends Authenticatable
     // {
     //     return $this->role === 'superuser';
     // }
-    
+
 
 
 }

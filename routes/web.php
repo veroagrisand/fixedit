@@ -14,6 +14,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', function () {return view('layouts.dashboard');})->name('dashboard');
     Route::get('/Community', [HomeController::class, 'comunity'])->name('community');
     Route::get('/About', [HomeController::class, 'about'])->name('about');
+    // Route::get('/coba', [HomeController::class, 'showCommunities'])->name('coba');
 
     // profile
     Route::get('/Profile-Dasboard', [ProfileController::class, 'dasboard'])->name('profile.dasboard');
@@ -26,7 +27,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/createcommunity', [CreateCommunityController::class, 'create'])->name('createcommunity.create');
     Route::post('/createcommunity', [CreateCommunityController::class, 'store'])->name('createcommunity.store');
 
+    //join
     Route::get('/JoinCommunity/{id_komunitas}', [CreateCommunityController::class, 'Join'])->name('Community.join');
+    Route::post('/JoinCommunity/{id_komunitas}', [CreateCommunityController::class, 'JoinS'])->name('Community.joinS');
 
 
     // Route::middleware(['member'])->group(function () {
@@ -43,7 +46,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/mycommunity/edit/{id_komunitas}', [CreateCommunityController::class, 'edit'])->name('mycommunity.Edit');
         Route::put('/mycommunity/update/{id_komunitas}', [CreateCommunityController::class, 'update'])->name('mycommunity.update');
 
-
+        //even
         Route::get('/mycommunity/add-event/{id_komunitas}', [KegiatanController::class, 'addEvent'])->name('mycommunity.AddEvent');
         Route::post('/mycommunity/add-event-post/{id_komunitas}', [CreateCommunityController::class, 'addEventPost'])->name('mycommunity.addEventPost');
     });
@@ -55,8 +58,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/superuser-Home', [Superuser::class, 'Home'])->name('superuser.Home');
         Route::get('/superuser-Kelola', [Superuser::class, 'kelola'])->name('superuser.kelola');
         Route::get('/superuser-User', [Superuser::class, 'user'])->name('superuser.user');
-        Route::get('/superuser-Kelola|Kegiatan/{id_komunitas}', [Superuser::class, 'kegiatan'])->name('superuser.kegiatan');
-        Route::get('/superuser-Kelola|komunitas/{id_komunitas}', [Superuser::class, 'komunitas'])->name('superuser.komunitas');
+        // Route::get('/superuser-Kelola|Kegiatan/{id_komunitas}', [Superuser::class, 'kegiatan'])->name('superuser.kegiatan');
+        // Route::get('/superuser-Kelola|komunitas/{id_komunitas}', [Superuser::class, 'komunitas'])->name('superuser.komunitas');
+        Route::get('/superuser-Kelola|komunitas|Edit/{id_komunitas}', [Superuser::class, 'edit'])->name('superuser.edit');
+        Route::put('/superuser-Kelola|komunitas/{id_komunitas}', [Superuser::class, 'update'])->name('superuser.update');
+
+
+        // Route::get('/mycommunity/edit/{id_komunitas}', [CreateCommunityController::class, 'edit'])->name('mycommunity.Edit');
+        // Route::put('/mycommunity/update/{id_komunitas}', [CreateCommunityController::class, 'update'])->name('mycommunity.update');
 
     });
 
